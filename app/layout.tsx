@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,7 +12,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Shruti | Personal Portfolio",
-  description: "Personal portfolio website for Shruti - Software Developer & Engineer",
+  description:
+    "Personal portfolio website built with Next.js, TypeScript, Tailwind CSS, and modern secure development practices.",
 };
 
 export default function RootLayout({
@@ -19,9 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} font-sans`}>
-      <body className="bg-background text-foreground antialiased selection:bg-primary selection:text-primary-foreground min-h-screen">
-        {children}
+    <html lang="en" className={`${inter.variable} font-sans scroll-smooth`}>
+      <body className="bg-background text-foreground antialiased min-h-screen flex flex-col selection:bg-primary selection:text-primary-foreground">
+        <Navbar />
+        <div className="flex-1">{children}</div>
+        <Footer />
       </body>
     </html>
   );

@@ -26,9 +26,9 @@ export default function Navbar() {
         {/* Brand Logo */}
         <Link
           href="#home"
-          className="text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors flex items-center gap-1"
+          className="text-lg sm:text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors flex items-center gap-1"
         >
-          <span>Shruti</span>
+          <span>Shruti Vijay Shinde</span>
           <span className="text-primary text-2xl leading-none">.</span>
         </Link>
 

@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shruti | Personal Portfolio",
+  title: "Shruti Vijay Shinde | Personal Portfolio",
   description:
     "Personal portfolio website built with Next.js, TypeScript, Tailwind CSS, and modern secure development practices.",
 };

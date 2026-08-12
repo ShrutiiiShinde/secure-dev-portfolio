@@ -1,11 +1,23 @@
 // Export global custom types for the portfolio application
 
+export type TechStackCategory = {
+  category: string; // e.g. "Framework", "Language", "Styling"
+  items: string[];
+};
+
 export type Project = {
   id: string;
   slug: string;
   title: string;
   description: string;
   longDescription?: string;
+  overview?: string;
+  features?: string[];
+  techStack?: TechStackCategory[];
+  architecture?: string;
+  challenges?: string[];
+  lessonsLearned?: string[];
+  securityHighlights?: string[];
   tags: string[];
   image?: string;
   link?: string;

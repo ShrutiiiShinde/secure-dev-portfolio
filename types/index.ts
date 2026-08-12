@@ -2,11 +2,16 @@
 
 export type Project = {
   id: string;
+  slug: string;
   title: string;
   description: string;
+  longDescription?: string;
   tags: string[];
+  image?: string;
   link?: string;
   github?: string;
+  securityFeatures?: string[];
+  featured?: boolean;
 };
 
 export type Experience = {

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
+import { contactSchema, ContactFormData } from "@/lib/validations/contact";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,37 +14,56 @@ import {
   BookOpen,
   CheckCircle2,
   AlertCircle,
+  Loader2,
 } from "lucide-react";
 
-// Client-side Zod Validation Schema
-export const contactSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters long." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  subject: z.string().min(4, { message: "Subject must be at least 4 characters long." }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters long." }),
-});
-
-export type ContactFormData = z.infer<typeof contactSchema>;
-
 export default function ContactSection() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [serverMessage, setServerMessage] = useState<{
+    type: "success" | "error";
+    text: string;
+  } | null>(null);
 
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
     reset,
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
     mode: "onTouched",
   });
 
-  // Client-side submit handler (UI placeholder for Day 9 - no backend submission yet)
-  const onSubmit = (data: ContactFormData) => {
-    console.log("Form validated successfully:", data);
-    setIsSubmitted(true);
-    reset();
-    setTimeout(() => setIsSubmitted(false), 5000);
+  const onSubmit = async (data: ContactFormData) => {
+    setServerMessage(null);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        setServerMessage({
+          type: "error",
+          text: result.message || result.error || "Failed to send message. Please try again.",
+        });
+        return;
+      }
+
+      setServerMessage({
+        type: "success",
+        text: result.message || "Thank you! Your message has been sent successfully.",
+      });
+      reset();
+    } catch (err) {
+      console.error("Network error submitting contact form:", err);
+      setServerMessage({
+        type: "error",
+        text: "Network connection error. Please check your connection and try again.",
+      });
+    }
   };
 
   return (
@@ -77,7 +96,7 @@ export default function ContactSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Left Column: Contact Cards & Info */}
+          {/* Left Column: Contact Info Cards */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -162,21 +181,43 @@ export default function ContactSection() {
           >
             <div className="p-8 sm:p-10 rounded-3xl border border-muted/80 bg-muted/20 backdrop-blur-xl relative overflow-hidden">
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" noValidate>
+                {/* 🛡️ Honeypot Field (Invisible to humans, triggers spam drop if filled by bots) */}
+                <div aria-hidden="true" className="hidden opacity-0 w-0 h-0 overflow-hidden pointer-events-none absolute">
+                  <label htmlFor="website">Leave this field blank</label>
+                  <input
+                    id="website"
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    {...register("website")}
+                  />
+                </div>
+
                 {/* Form Header */}
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold text-foreground">
                     Send a Message
                   </h3>
                   <p className="text-xs font-mono text-muted-foreground">
-                    Client-side validation powered by React Hook Form & Zod
+                    Server-validated & rate-limited Route Handler (/api/contact)
                   </p>
                 </div>
 
-                {/* Validation Success Notification Banner */}
-                {isSubmitted && (
-                  <div className="p-4 rounded-2xl border border-secondary/40 bg-secondary/10 text-secondary text-sm font-medium flex items-center space-x-3">
-                    <CheckCircle2 className="w-5 h-5 shrink-0" />
-                    <span>Form validated successfully! (Submission endpoint coming soon)</span>
+                {/* Server Response Notification Banner */}
+                {serverMessage && (
+                  <div
+                    className={`p-4 rounded-2xl border text-sm font-medium flex items-center space-x-3 ${
+                      serverMessage.type === "success"
+                        ? "border-secondary/40 bg-secondary/10 text-secondary"
+                        : "border-red-500/50 bg-red-500/10 text-red-400"
+                    }`}
+                  >
+                    {serverMessage.type === "success" ? (
+                      <CheckCircle2 className="w-5 h-5 shrink-0" />
+                    ) : (
+                      <AlertCircle className="w-5 h-5 shrink-0" />
+                    )}
+                    <span>{serverMessage.text}</span>
                   </div>
                 )}
 
@@ -295,10 +336,20 @@ export default function ContactSection() {
                 <Button
                   type="submit"
                   size="lg"
+                  disabled={isSubmitting}
                   className="w-full sm:w-auto font-semibold"
                 >
-                  <Send className="w-4 h-4 mr-2" />
-                  Send Message
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                      Processing...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-4 h-4 mr-2" />
+                      Send Message
+                    </>
+                  )}
                 </Button>
 
                 {/* Required Security Note */}

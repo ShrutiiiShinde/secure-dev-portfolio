@@ -2,16 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShieldCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
-  { name: "Projects", href: "#projects" },
-  { name: "Skills", href: "#skills" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/#home" },
+  { name: "About", href: "/#about" },
+  { name: "Experience", href: "/#experience" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Skills", href: "/#skills" },
+  { name: "Contact", href: "/#contact" },
+  { name: "Security", href: "/security" },
 ];
 
 export default function Navbar() {
@@ -25,7 +26,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand Logo */}
         <Link
-          href="#home"
+          href="/#home"
           className="text-lg sm:text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors flex items-center gap-1"
         >
           <span>Shruti Vijay Shinde</span>
@@ -38,9 +39,14 @@ export default function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="px-3.5 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted/40 rounded-lg transition-all"
+              className={`px-3.5 py-2 text-sm font-medium rounded-lg transition-all ${
+                item.name === "Security"
+                  ? "text-secondary font-semibold hover:text-secondary hover:bg-secondary/10 border border-secondary/30 flex items-center gap-1.5"
+                  : "text-muted-foreground hover:text-primary hover:bg-muted/40"
+              }`}
             >
-              {item.name}
+              {item.name === "Security" && <ShieldCheck className="w-3.5 h-3.5" />}
+              <span>{item.name}</span>
             </Link>
           ))}
         </nav>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ShieldCheck } from "lucide-react";
 
 export default function Footer() {
@@ -87,10 +88,13 @@ export default function Footer() {
             <span className="text-primary font-mono text-xs">Tailwind CSS</span>
           </p>
 
-          <p className="flex items-center justify-center gap-1.5 text-xs text-muted-foreground/80">
+          <Link
+            href="/security"
+            className="inline-flex items-center justify-center gap-1.5 text-xs text-secondary hover:text-foreground hover:underline transition-colors font-medium"
+          >
             <ShieldCheck className="w-4 h-4 text-secondary inline-block" />
-            Built using modern secure development practices.
-          </p>
+            <span>Built using modern secure development practices. Explore Security Architecture →</span>
+          </Link>
         </div>
 
         {/* Copyright Divider & Line */}

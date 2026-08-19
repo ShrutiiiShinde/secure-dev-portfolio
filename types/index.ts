@@ -37,3 +37,25 @@ export type Experience = {
   responsibilities: string[];
   skills: string[];
 };
+
+export type Achievement = {
+  id: string;
+  title: string;
+  organization: string;
+  period: string;
+  badge: string;
+  description: string;
+  highlights: string[];
+};
+
+export type Article = {
+  id: string;
+  title: string;
+  summary: string;
+  readTime: string;
+  date: string;
+  category: string;
+  tags: string[];
+  mediumUrl: string;
+  coverImage?: string;
+};

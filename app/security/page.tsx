@@ -6,18 +6,21 @@ import {
   Lock,
   ArrowLeft,
   Terminal,
-  CheckCircle2,
   AlertTriangle,
   MailCheck,
   Hourglass,
   FileCheck2,
   Sparkles,
+  GitBranch,
+  Search,
+  Shield,
+  Key,
 } from "lucide-react";
 
 export const metadata = {
   title: "Security Architecture | Shruti Vijay Shinde",
   description:
-    "Explore the active HTTP security headers, contact form controls, and secure development architecture engineered into this portfolio.",
+    "Explore active HTTP security headers, DevSecOps CI/CD pipelines, contact form controls, and secure development architecture engineered into this portfolio.",
 };
 
 export default function SecurityPage() {
@@ -46,7 +49,7 @@ export default function SecurityPage() {
           </h1>
 
           <p className="text-base sm:text-xl text-muted-foreground leading-relaxed max-w-3xl">
-            This portfolio isn&apos;t just a visual resume — it is a production-grade web application engineered with strict HTTP security headers, zero-trust server validation, rate limiting, and privacy controls.
+            This portfolio isn&apos;t just a visual resume — it is a production-grade web application engineered with strict HTTP security headers, automated DevSecOps CI/CD pipelines, zero-trust server validation, rate limiting, and privacy controls.
           </p>
         </div>
 
@@ -112,7 +115,79 @@ export default function SecurityPage() {
         </div>
 
         {/* ------------------------------------------------------------- */}
-        {/* SECTION 2: Contact Form Real Security Controls                */}
+        {/* SECTION 2: DevSecOps CI/CD Pipeline Summary                   */}
+        {/* ------------------------------------------------------------- */}
+        <div className="space-y-8 pt-8 border-t border-muted/50">
+          <div className="space-y-3">
+            <div className="flex items-center gap-2 text-primary font-mono text-xs uppercase font-bold tracking-wider">
+              <GitBranch className="w-4 h-4" />
+              <span>GitHub Actions Workflows (.github/workflows/ci.yml)</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">
+              DevSecOps Automated CI/CD Pipeline
+            </h2>
+            <p className="text-sm sm:text-base text-muted-foreground max-w-2xl">
+              Every code commit and Pull Request to <code className="text-xs font-mono text-primary bg-primary/10 px-1.5 py-0.5 rounded">main</code> triggers an automated security scanning pipeline before code merges.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Stage 1: Build & Type Check */}
+            <div className="p-6 rounded-3xl border border-muted/80 bg-muted/20 backdrop-blur-xl space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+                <FileCheck2 className="w-5 h-5" />
+              </div>
+              <h3 className="text-base font-bold text-foreground">
+                Lint, Typecheck & Build
+              </h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Runs ESLint rules, enforces 0 TypeScript errors (<code className="font-mono text-[10px]">tsc --noEmit</code>), and verifies Next.js SSR builds.
+              </p>
+            </div>
+
+            {/* Stage 2: CodeQL SAST */}
+            <div className="p-6 rounded-3xl border border-muted/80 bg-muted/20 backdrop-blur-xl space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary">
+                <Search className="w-5 h-5" />
+              </div>
+              <h3 className="text-base font-bold text-foreground">
+                CodeQL SAST Analysis
+              </h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                GitHub CodeQL performs Static Application Security Testing (SAST) to detect code injection and logic flaws in code paths.
+              </p>
+            </div>
+
+            {/* Stage 3: Gitleaks Secret Scanner */}
+            <div className="p-6 rounded-3xl border border-muted/80 bg-muted/20 backdrop-blur-xl space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-warning/10 border border-warning/20 flex items-center justify-center text-warning">
+                <Key className="w-5 h-5" />
+              </div>
+              <h3 className="text-base font-bold text-foreground">
+                Gitleaks Secret Audit
+              </h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Automated secret scanning intercepts commits containing hardcoded API keys, OAuth tokens, or private credentials.
+              </p>
+            </div>
+
+            {/* Stage 4: Dependabot Scanning */}
+            <div className="p-6 rounded-3xl border border-muted/80 bg-muted/20 backdrop-blur-xl space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+                <Shield className="w-5 h-5" />
+              </div>
+              <h3 className="text-base font-bold text-foreground">
+                Dependabot Audits
+              </h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Monitors npm package dependencies and GitHub Actions weekly for reported CVE vulnerabilities and issues automated PR patches.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------- */}
+        {/* SECTION 3: Contact Form Real Security Controls                */}
         {/* ------------------------------------------------------------- */}
         <div className="space-y-8 pt-8 border-t border-muted/50">
           <div className="space-y-3">
@@ -184,7 +259,7 @@ export default function SecurityPage() {
         </div>
 
         {/* ------------------------------------------------------------- */}
-        {/* SECTION 3: Secure Development Philosophy Closing Statement    */}
+        {/* SECTION 4: Secure Development Philosophy Closing Statement    */}
         {/* ------------------------------------------------------------- */}
         <div className="relative rounded-3xl border-2 border-primary/60 bg-gradient-to-br from-primary/10 via-background to-secondary/10 p-8 sm:p-12 shadow-2xl space-y-6 text-center sm:text-left overflow-hidden">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6 relative z-10">
@@ -199,7 +274,7 @@ export default function SecurityPage() {
               </h2>
 
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                Application security is an architectural requirement that begins at line one of code. By combining strict TypeScript type safety, server-side data validation, automated linting, security headers, and threat modeling throughout the software development lifecycle, software can be delivered robust, performant, and secure by design.
+                Application security is an architectural requirement that begins at line one of code. By combining strict TypeScript type safety, server-side data validation, automated DevSecOps CI scanning, security headers, and threat modeling throughout the software development lifecycle, software can be delivered robust, performant, and secure by design.
               </p>
             </div>
 

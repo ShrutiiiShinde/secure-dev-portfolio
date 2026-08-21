@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Download, Mail, Shield } from "lucide-react";
+import { ArrowRight, FileText, Mail, Shield } from "lucide-react";
 import HeroEntrance from "./HeroEntrance";
 
 export default function HeroSection() {
@@ -52,15 +52,15 @@ export default function HeroSection() {
                 </Link>
               </Button>
 
-              {/* 2. Download Resume (Outline CTA) */}
+              {/* 2. View Resume (Outline CTA linking to /resume) */}
               <Button asChild size="lg" variant="outline">
-                <a href="/resume.pdf" download="Shruti_Shinde_Resume.pdf">
-                  <Download className="w-4 h-4 mr-1 text-secondary" />
-                  Download Resume
-                </a>
+                <Link href="/resume">
+                  <FileText className="w-4 h-4 mr-1.5 text-secondary" />
+                  View Resume
+                </Link>
               </Button>
 
-              {/* 3. Contact Me (Ghost/Outline CTA) */}
+              {/* 3. Contact Me (Ghost CTA) */}
               <Button asChild size="lg" variant="ghost">
                 <Link href="#contact">
                   <Mail className="w-4 h-4 mr-1 text-primary" />

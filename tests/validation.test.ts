@@ -1,3 +1,5 @@
+import test, { describe, it } from "node:test";
+import assert from "node:assert/strict";
 import { contactSchema } from "../lib/validations/contact";
 
 describe("Contact Form Validation & Honeypot Logic", () => {
@@ -11,7 +13,7 @@ describe("Contact Form Validation & Honeypot Logic", () => {
     };
 
     const result = contactSchema.safeParse(validData);
-    expect(result.success).toBe(true);
+    assert.equal(result.success, true);
   });
 
   it("should reject invalid email formats", () => {
@@ -23,9 +25,9 @@ describe("Contact Form Validation & Honeypot Logic", () => {
     };
 
     const result = contactSchema.safeParse(invalidEmailData);
-    expect(result.success).toBe(false);
+    assert.equal(result.success, false);
     if (!result.success) {
-      expect(result.error.flatten().fieldErrors.email).toBeDefined();
+      assert.ok(result.error.flatten().fieldErrors.email);
     }
   });
 
@@ -38,9 +40,9 @@ describe("Contact Form Validation & Honeypot Logic", () => {
     };
 
     const result = contactSchema.safeParse(shortNameData);
-    expect(result.success).toBe(false);
+    assert.equal(result.success, false);
     if (!result.success) {
-      expect(result.error.flatten().fieldErrors.name).toBeDefined();
+      assert.ok(result.error.flatten().fieldErrors.name);
     }
   });
 
@@ -53,9 +55,9 @@ describe("Contact Form Validation & Honeypot Logic", () => {
     };
 
     const result = contactSchema.safeParse(shortMessageData);
-    expect(result.success).toBe(false);
+    assert.equal(result.success, false);
     if (!result.success) {
-      expect(result.error.flatten().fieldErrors.message).toBeDefined();
+      assert.ok(result.error.flatten().fieldErrors.message);
     }
   });
 
@@ -69,9 +71,9 @@ describe("Contact Form Validation & Honeypot Logic", () => {
     };
 
     const result = contactSchema.safeParse(botData);
-    expect(result.success).toBe(true);
+    assert.equal(result.success, true);
     if (result.success) {
-      expect(result.data.website).toBe("http://malicious-bot-trap.com");
+      assert.equal(result.data.website, "http://malicious-bot-trap.com");
     }
   });
 });

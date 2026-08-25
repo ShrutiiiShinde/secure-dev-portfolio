@@ -37,4 +37,16 @@ export const articlesData: Article[] = [
     mediumUrl:
       "https://medium.com/@shrutishinde1319/reading-a-website-like-a-pentester-what-to-test-in-every-functionality-6375f58ba8fe",
   },
+  {
+    id: "art-4",
+    title: "Decoding a URL: Paths, Parameters, and the Art of Finding What’s Hidden",
+    summary:
+      "An in-depth security breakdown of URL structures — analyzing schemes, domain routes, query parameters, path traversal vulnerabilities, and hidden parameter discovery techniques during web audits.",
+    readTime: "6 min read",
+    date: "2024",
+    category: "URL Security & Recon",
+    tags: ["URL Security", "Parameter Discovery", "Web VAPT", "Path Analysis"],
+    mediumUrl:
+      "https://medium.com/@shrutishinde1319/decoding-a-url-paths-parameters-and-the-art-of-finding-whats-hidden-087f3b420d4c",
+  },
 ];

@@ -9,7 +9,6 @@ import {
   Award,
   ShieldCheck,
   Code2,
-  Printer,
   Mail,
   MapPin,
   ExternalLink,
@@ -107,7 +106,7 @@ export default function ResumePage() {
               <span>Executive Summary</span>
             </h3>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              Software Developer with a specialized background in Cybersecurity and Vulnerability Assessment & Penetration Testing (VAPT). Proven expertise in full-stack web architecture using Next.js 15, TypeScript, and Tailwind CSS, coupled with hands-on experience identifying OWASP Top 10 vulnerabilities, conducting risk assessments, and authoring technical security literature on Medium.
+              Software Developer with a specialized background in Cybersecurity, Vulnerability Assessment & Penetration Testing (VAPT), and Cybersecurity Instruction. Proven expertise in full-stack web architecture using Next.js 15, TypeScript, and Tailwind CSS, coupled with hands-on experience identifying OWASP Top 10 vulnerabilities, delivering technical security workshops, and authoring cybersecurity literature on Medium.
             </p>
           </div>
 
@@ -118,7 +117,28 @@ export default function ResumePage() {
               <span>Professional Experience</span>
             </h3>
 
-            <div className="space-y-6 pl-4 border-l-2 border-primary/30">
+            <div className="space-y-8 pl-4 border-l-2 border-primary/30">
+              {/* Entry 1: Cybersecurity Trainer */}
+              <div className="space-y-2">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                  <h4 className="text-lg font-bold text-foreground">
+                    Cyber Security Trainer
+                  </h4>
+                  <span className="text-xs font-mono text-secondary font-semibold">
+                    12 Days Training Workshop
+                  </span>
+                </div>
+                <p className="text-xs font-mono text-primary font-semibold">
+                  Thundercipher
+                </p>
+                <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
+                  <li>Conducted an intensive 12-day hands-on Cybersecurity & Web Security training program for students.</li>
+                  <li>Taught core security fundamentals, ethical hacking techniques, and OWASP Top 10 web application vulnerabilities.</li>
+                  <li>Guided students through practical lab demonstrations, vulnerability analysis, and defensive security measures.</li>
+                </ul>
+              </div>
+
+              {/* Entry 2: VAPT Intern */}
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <h4 className="text-lg font-bold text-foreground">
@@ -155,7 +175,7 @@ export default function ResumePage() {
               </div>
               <div className="p-4 rounded-2xl border border-muted/60 bg-background/50 space-y-2">
                 <span className="text-xs font-mono font-semibold text-secondary">Cybersecurity & VAPT</span>
-                <p className="text-xs text-muted-foreground">Web VAPT, OWASP Top 10, Burp Suite Pro, Nmap, Wireshark, Risk Assessment</p>
+                <p className="text-xs text-muted-foreground">Web VAPT, Cybersecurity Training, OWASP Top 10, Burp Suite Pro, Nmap, Wireshark</p>
               </div>
               <div className="p-4 rounded-2xl border border-muted/60 bg-background/50 space-y-2">
                 <span className="text-xs font-mono font-semibold text-primary">Backend & Storage</span>

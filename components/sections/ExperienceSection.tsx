@@ -4,8 +4,32 @@ import { motion } from "framer-motion";
 import { Briefcase, Calendar, ShieldCheck, CheckCircle2, Award } from "lucide-react";
 import { Experience } from "@/types";
 
-// Reusable experience data list (easily append future entries here)
+// Reusable experience data list
 const experiences: Experience[] = [
+  {
+    id: "exp-2",
+    role: "Cyber Security Trainer",
+    company: "Thundercipher",
+    location: "India",
+    period: "12 Days Training",
+    type: "Trainer",
+    description:
+      "Conducted a 12-day intensive Cybersecurity & Web Security training program for students, teaching core security concepts, ethical hacking principles, OWASP Top 10 vulnerabilities, and practical threat defense strategies.",
+    responsibilities: [
+      "Cybersecurity Instruction",
+      "Hands-on Lab Demonstrations",
+      "OWASP Top 10 Security Concepts",
+      "Student Mentorship & Guidance",
+      "VAPT Fundamentals",
+    ],
+    skills: [
+      "Cybersecurity Training",
+      "Ethical Hacking",
+      "Web Security",
+      "Vulnerability Basics",
+      "Technical Mentorship",
+    ],
+  },
   {
     id: "exp-1",
     role: "Cybersecurity Intern – VAPT",
@@ -58,7 +82,7 @@ export default function ExperienceSection() {
             Professional <span className="text-primary">Experience</span>
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-            Practical application of web application security, threat assessments, and vulnerability analysis.
+            Practical application of web application security, cybersecurity training, threat assessments, and vulnerability analysis.
           </p>
         </motion.div>
 
@@ -108,7 +132,7 @@ export default function ExperienceSection() {
 
                     <div className="flex items-center gap-1 text-xs font-mono text-primary bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-xl self-start sm:self-center">
                       <ShieldCheck className="w-4 h-4 text-primary" />
-                      <span>Security VAPT</span>
+                      <span>{exp.type === "Trainer" ? "Security Training" : "Security VAPT"}</span>
                     </div>
                   </div>
 

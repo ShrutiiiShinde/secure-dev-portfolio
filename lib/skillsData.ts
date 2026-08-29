@@ -1,6 +1,6 @@
 export type SkillCategory = {
   id: string;
-  category: string; // e.g. "Development", "Cybersecurity"
+  category: string;
   description: string;
   core: string[];
   familiar: string[];
@@ -8,98 +8,45 @@ export type SkillCategory = {
 
 export const skillsData: SkillCategory[] = [
   {
-    id: "dev",
-    category: "Development",
-    description: "Modern frontend and web interface engineering",
-    core: [
-      "Next.js 15",
-      "React 19",
-      "TypeScript",
-      "JavaScript (ES6+)",
-      "Tailwind CSS v4",
-      "HTML5 / Semantic CSS3",
-    ],
-    familiar: [
-      "Responsive Web Design",
-      "Framer Motion",
-      "shadcn/ui Component Systems",
-      "Web Accessibility (WCAG)",
-    ],
+    id: "programming",
+    category: "Programming",
+    description: "Core programming languages and query languages",
+    core: ["Python", "Java", "JavaScript", "SQL"],
+    familiar: ["TypeScript", "Bash / Shell Scripting"],
   },
   {
-    id: "backend",
-    category: "Backend",
-    description: "Server-side logic, API endpoints, and auth controls",
-    core: [
-      "Node.js",
-      "Express.js",
-      "RESTful API Design",
-      "JWT Authentication",
-      "Server Components",
-    ],
-    familiar: [
-      "Next.js Server Actions",
-      "API Rate Limiting",
-      "OAuth 2.0 Protocols",
-      "Custom Middleware Controls",
-    ],
+    id: "app-web",
+    category: "Application & Web",
+    description: "Modern web frameworks, frontend structure, and APIs",
+    core: ["HTML", "CSS", "Next.js", "TypeScript", "REST APIs"],
+    familiar: ["React", "Tailwind CSS", "shadcn/ui", "Framer Motion"],
   },
   {
-    id: "database",
-    category: "Database",
-    description: "Structured and unstructured data persistence layer",
-    core: ["MongoDB", "PostgreSQL", "SQL Querying", "Mongoose ORM"],
-    familiar: ["Prisma ORM", "Redis In-Memory Caching", "At-Rest Data Encryption"],
+    id: "tools",
+    category: "Development Tools",
+    description: "Environment tooling, version control, and OS platforms",
+    core: ["Git", "GitHub", "VS Code", "Linux"],
+    familiar: ["GitHub Actions CI/CD", "Dependabot", "CodeQL"],
   },
   {
-    id: "security",
-    category: "Cybersecurity",
-    description: "Vulnerability assessment, pen-testing, and security auditing",
-    core: [
-      "Web Application VAPT",
-      "OWASP Top 10 Auditing",
-      "Burp Suite Pro",
-      "Reconnaissance & Footprinting",
-      "Vulnerability Validation",
-    ],
-    familiar: [
-      "Nmap / Wireshark Traffic Analysis",
-      "Metasploit Fundamentals",
-      "Risk Assessment & Report Writing",
-      "Responsible Disclosure",
-    ],
+    id: "security-tools",
+    category: "Security Tools & VAPT",
+    description: "Penetration testing suites, vulnerability scanners, and security distros",
+    core: ["Burp Suite", "Nmap", "Wireshark", "Kali Linux"],
+    familiar: ["Web VAPT", "OWASP Top 10 Auditing", "PoC Documentation", "Reconnaissance"],
   },
   {
     id: "networking",
     category: "Networking",
-    description: "Network communication protocols, traffic analysis, and routing",
-    core: [
-      "HTTP / HTTPS Protocols",
-      "TCP/IP Network Suite",
-      "DNS & Domain Routing",
-      "TLS / SSL Certificate Handshakes",
-    ],
-    familiar: [
-      "Subnetting & CIDR Concepts",
-      "Firewall Policy Configuration",
-      "VPN & Proxy Tunneling",
-    ],
+    description: "Network communication protocols, DNS, and architectural models",
+    core: ["TCP/IP", "HTTP/HTTPS", "DNS", "OSI Model"],
+    familiar: ["TLS/SSL Protocols", "Packet Inspection", "Perimeter Firewalls"],
   },
   {
     id: "secure-dev",
     category: "Secure Development",
     description: "Proactive security controls embedded across the SDLC",
-    core: [
-      "Threat Modeling",
-      "Secure SDLC (SSDLC)",
-      "Input Validation & Sanitization",
-      "Security Headers (CSP, HSTS, X-Frame)",
-    ],
-    familiar: [
-      "DevSecOps CI/CD Integration",
-      "Static Code Analysis (SAST)",
-      "Secrets Management",
-      "Role-Based Access Control (RBAC)",
-    ],
+    core: ["Threat Modeling", "Secure SDLC (SSDLC)", "Zero-Trust Server Validation", "HTTP Security Headers"],
+    familiar: ["Upstash Redis Rate Limiting", "Honeypot Bot Protection", "Data Minimization"],
   },
 ];

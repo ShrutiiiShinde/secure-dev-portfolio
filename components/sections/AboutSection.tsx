@@ -9,32 +9,31 @@ import {
   Lock,
   CheckCircle2,
   Code2,
-  Bug,
 } from "lucide-react";
 
 export default function AboutSection() {
   const factBadges = [
     {
-      title: "Cybersecurity Graduate",
-      description: "Specialized in Network & App Security",
+      title: "B.Tech CSE (CGPA 9.24/10)",
+      description: "MGM University (IoT Cybersecurity & Blockchain)",
       icon: GraduationCap,
       color: "text-primary border-primary/30 bg-primary/10",
     },
     {
-      title: "6 Months VAPT Experience",
-      description: "Vulnerability Assessment & Pen Testing",
+      title: "VAPT & Security Experience",
+      description: "Rudra Tech Services & ThunderCipher Trainer",
       icon: ShieldCheck,
       color: "text-secondary border-secondary/30 bg-secondary/10",
     },
     {
       title: "Hall of Fame Recognition",
-      description: "Acknowledged for Security Disclosures",
+      description: "TU Delft & SiteConnect Disclosures",
       icon: Trophy,
       color: "text-warning border-warning/30 bg-warning/10",
     },
     {
       title: "Technical Writer on Medium",
-      description: "Sharing Insights on Security & Dev",
+      description: "Authoring Cybersecurity & VAPT Insights",
       icon: BookOpen,
       color: "text-primary border-primary/30 bg-primary/10",
     },
@@ -99,28 +98,19 @@ export default function AboutSection() {
             className="lg:col-span-7 space-y-6 text-muted-foreground text-base sm:text-lg leading-relaxed"
           >
             <h3 className="text-2xl font-bold text-foreground tracking-tight">
-              Hello, I&apos;m Shruti Vijay Shinde.
+              Hello, I&apos;m Shruti Shinde.
             </h3>
 
             <p>
-              I am a Software Developer with a specialized focus on Cybersecurity
-              and Vulnerability Assessment & Penetration Testing (VAPT). My
-              journey combines a deep curiosity for full-stack web architectures
-              with a rigorous security mindset.
+              I am a Software Developer and Cybersecurity Specialist currently completing my B.Tech in CSE (IoT Cybersecurity & Blockchain Technology) at MGM University with a 9.24 CGPA.
             </p>
 
             <p>
-              Having worked on hands-on security auditing and vulnerability
-              identification, I understand how real-world attackers target web
-              applications. Rather than treating security as an after-the-fact
-              checklist, I embed secure coding principles into every phase of the
-              development lifecycle.
+              My experience spans hands-on Web Application Vulnerability Assessment & Penetration Testing (VAPT) at Rudra Tech Services, alongside delivering live web security and OWASP Top 10 training sessions for 50+ students at ThunderCipher.
             </p>
 
             <p>
-              When I&apos;m not writing clean TypeScript or auditing APIs, I actively
-              publish technical articles on Medium, helping developers understand
-              application security fundamentals and modern secure coding practices.
+              Rather than treating security as an after-the-fact checklist, I embed secure coding principles into every phase of the development lifecycle while sharing technical literature on Medium.
             </p>
           </motion.div>
 
@@ -132,7 +122,7 @@ export default function AboutSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4"
           >
-            {factBadges.map((badge, idx) => {
+            {factBadges.map((badge) => {
               const Icon = badge.icon;
               return (
                 <div

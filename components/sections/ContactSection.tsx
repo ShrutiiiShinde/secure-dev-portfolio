@@ -15,6 +15,7 @@ import {
   CheckCircle2,
   AlertCircle,
   Loader2,
+  Phone,
 } from "lucide-react";
 
 export default function ContactSection() {
@@ -109,24 +110,45 @@ export default function ContactSection() {
                 Contact Information
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Open for full-stack software development opportunities, vulnerability assessments, and technical writing collaborations.
+                Open for software development opportunities, VAPT assessments, security training, and technical writing collaborations.
               </p>
 
               <div className="space-y-4 pt-2">
-                {/* Location */}
-                <div className="flex items-center space-x-4 p-4 rounded-2xl border border-muted/60 bg-background/50">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shrink-0">
-                    <MapPin className="w-5 h-5" />
+                {/* Email */}
+                <a
+                  href="mailto:shrutishinde1319@gmail.com"
+                  className="flex items-center space-x-4 p-4 rounded-2xl border border-muted/60 bg-background/50 hover:border-primary/50 transition-colors group"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shrink-0 group-hover:scale-105 transition-transform">
+                    <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-xs font-mono text-muted-foreground">Location</span>
-                    <p className="text-sm font-semibold text-foreground">India</p>
+                    <span className="text-xs font-mono text-muted-foreground">Email</span>
+                    <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
+                      shrutishinde1319@gmail.com
+                    </p>
                   </div>
-                </div>
+                </a>
+
+                {/* Phone */}
+                <a
+                  href="tel:+918262804360"
+                  className="flex items-center space-x-4 p-4 rounded-2xl border border-muted/60 bg-background/50 hover:border-secondary/50 transition-colors group"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary shrink-0 group-hover:scale-105 transition-transform">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-xs font-mono text-muted-foreground">Phone</span>
+                    <p className="text-sm font-semibold text-foreground group-hover:text-secondary transition-colors">
+                      (+91) 8262804360
+                    </p>
+                  </div>
+                </a>
 
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/shrutishinde19/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-4 p-4 rounded-2xl border border-muted/60 bg-background/50 hover:border-primary/50 transition-colors group"
@@ -139,14 +161,14 @@ export default function ContactSection() {
                   <div>
                     <span className="text-xs font-mono text-muted-foreground">LinkedIn</span>
                     <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
-                      Connect on LinkedIn
+                      shrutishinde19
                     </p>
                   </div>
                 </a>
 
                 {/* Medium Articles */}
                 <a
-                  href="https://medium.com"
+                  href="https://medium.com/@shrutishinde1319"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-4 p-4 rounded-2xl border border-muted/60 bg-background/50 hover:border-primary/50 transition-colors group"
@@ -157,7 +179,7 @@ export default function ContactSection() {
                   <div>
                     <span className="text-xs font-mono text-muted-foreground">Technical Writing</span>
                     <p className="text-sm font-semibold text-foreground group-hover:text-secondary transition-colors">
-                      Read Articles on Medium
+                      @shrutishinde1319
                     </p>
                   </div>
                 </a>
@@ -181,7 +203,7 @@ export default function ContactSection() {
           >
             <div className="p-8 sm:p-10 rounded-3xl border border-muted/80 bg-muted/20 backdrop-blur-xl relative overflow-hidden">
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" noValidate>
-                {/* 🛡️ Honeypot Field (Invisible to humans, triggers spam drop if filled by bots) */}
+                {/* 🛡️ Honeypot Field */}
                 <div aria-hidden="true" className="hidden opacity-0 w-0 h-0 overflow-hidden pointer-events-none absolute">
                   <label htmlFor="website">Leave this field blank</label>
                   <input

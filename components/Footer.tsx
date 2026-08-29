@@ -15,7 +15,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-muted/50 transition-all"
-            aria-label="GitHub"
+            aria-label="GitHub Profile"
           >
             <svg
               className="w-5 h-5 fill-current"
@@ -28,11 +28,11 @@ export default function Footer() {
 
           {/* LinkedIn Icon */}
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/shrutishinde19/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-muted/50 transition-all"
-            aria-label="LinkedIn"
+            aria-label="LinkedIn Profile"
           >
             <svg
               className="w-5 h-5 fill-current"
@@ -45,11 +45,11 @@ export default function Footer() {
 
           {/* Medium Icon */}
           <a
-            href="https://medium.com"
+            href="https://medium.com/@shrutishinde1319"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-muted/50 transition-all"
-            aria-label="Medium"
+            aria-label="Medium Profile"
           >
             <svg
               className="w-5 h-5 fill-current"
@@ -64,7 +64,7 @@ export default function Footer() {
           <a
             href="mailto:shrutishinde1319@gmail.com"
             className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-muted/50 transition-all"
-            aria-label="Email"
+            aria-label="Email Shruti Shinde"
           >
             <svg
               className="w-5 h-5 fill-none stroke-current stroke-2"
@@ -83,7 +83,7 @@ export default function Footer() {
         <div className="space-y-2 text-muted-foreground max-w-md">
           <p className="font-medium text-foreground/90">
             Built with:{" "}
-            <span className="text-primary font-mono text-xs">Next.js</span>,{" "}
+            <span className="text-primary font-mono text-xs">Next.js 15</span>,{" "}
             <span className="text-secondary font-mono text-xs">TypeScript</span>,{" "}
             <span className="text-primary font-mono text-xs">Tailwind CSS</span>
           </p>
@@ -99,7 +99,7 @@ export default function Footer() {
 
         {/* Copyright Divider & Line */}
         <div className="w-full max-w-xs border-t border-muted/40 pt-4 text-xs text-muted-foreground/70">
-          © {currentYear} Shruti Vijay Shinde. All rights reserved.
+          © {currentYear} Shruti Shinde. All rights reserved.
         </div>
       </div>
     </footer>

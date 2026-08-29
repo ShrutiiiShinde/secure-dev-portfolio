@@ -4,54 +4,52 @@ import { motion } from "framer-motion";
 import { Briefcase, Calendar, ShieldCheck, CheckCircle2, Award } from "lucide-react";
 import { Experience } from "@/types";
 
-// Reusable experience data list
+// Reusable experience data list matching official resume
 const experiences: Experience[] = [
   {
     id: "exp-2",
-    role: "Cyber Security Trainer",
-    company: "Thundercipher",
-    location: "India",
-    period: "12 Days Training",
-    type: "Trainer",
+    role: "Cybersecurity Trainer",
+    company: "ThunderCipher",
+    location: "On-site",
+    period: "21 Aug 2026 – 31 Aug 2026",
+    type: "Ongoing",
     description:
-      "Conducted a 12-day intensive Cybersecurity & Web Security training program for students, teaching core security concepts, ethical hacking principles, OWASP Top 10 vulnerabilities, and practical threat defense strategies.",
+      "Delivering live Web Application Security and OWASP Top 10 sessions for 50+ students, creating and presenting practical technical content, demonstrations, and hands-on exercises.",
     responsibilities: [
-      "Cybersecurity Instruction",
-      "Hands-on Lab Demonstrations",
-      "OWASP Top 10 Security Concepts",
-      "Student Mentorship & Guidance",
-      "VAPT Fundamentals",
+      "Live Web Security & OWASP Top 10 Instruction",
+      "Interactive Hands-on Lab Exercises",
+      "Demonstrations for 50+ Students",
+      "Technical Content Creation",
     ],
     skills: [
-      "Cybersecurity Training",
-      "Ethical Hacking",
+      "Cybersecurity Instruction",
+      "OWASP Top 10",
       "Web Security",
-      "Vulnerability Basics",
-      "Technical Mentorship",
+      "Technical Presentations",
     ],
   },
   {
     id: "exp-1",
     role: "Cybersecurity Intern – VAPT",
-    company: "Vulnerability Assessment & Security Division",
-    location: "India",
+    company: "Rudra Tech Services",
+    location: "On-site",
     period: "6 Months",
     type: "Internship",
     description:
-      "Executed comprehensive Vulnerability Assessment & Penetration Testing (VAPT) on web applications, identifying critical security weaknesses, evaluating exploitability, and authoring detailed risk assessment reports.",
+      "Analyzed web applications to identify, investigate, and validate technical and security issues using Python, Linux, and security tools. Documented findings with detailed analysis, proof of concepts, and recommended solutions.",
     responsibilities: [
-      "Web Application VAPT",
-      "Reconnaissance",
-      "Vulnerability Validation",
-      "Security Report Writing",
-      "Risk Assessment",
+      "Web Application VAPT Analysis",
+      "Vulnerability Validation & Investigation",
+      "Python & Linux Security Tooling",
+      "Detailed POC & Risk Documentation",
+      "Remediation Recommendations",
     ],
     skills: [
-      "OWASP Top 10",
-      "Burp Suite",
-      "Web Security Auditing",
-      "Risk Scoring",
-      "Remediation Guidance",
+      "VAPT",
+      "Python",
+      "Linux",
+      "POC Documentation",
+      "Security Auditing",
     ],
   },
 ];
@@ -125,14 +123,14 @@ export default function ExperienceSection() {
                       <h3 className="text-xl sm:text-2xl font-bold text-foreground mt-2 group-hover:text-primary transition-colors">
                         {exp.role}
                       </h3>
-                      <p className="text-sm text-muted-foreground font-medium mt-0.5">
-                        {exp.company}
+                      <p className="text-sm text-primary font-semibold mt-0.5">
+                        {exp.company} <span className="text-xs text-muted-foreground font-mono">({exp.location})</span>
                       </p>
                     </div>
 
                     <div className="flex items-center gap-1 text-xs font-mono text-primary bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-xl self-start sm:self-center">
                       <ShieldCheck className="w-4 h-4 text-primary" />
-                      <span>{exp.type === "Trainer" ? "Security Training" : "Security VAPT"}</span>
+                      <span>{exp.type === "Ongoing" ? "Security Training" : "Security VAPT"}</span>
                     </div>
                   </div>
 
@@ -145,7 +143,7 @@ export default function ExperienceSection() {
                   <div className="space-y-3">
                     <h4 className="text-xs font-mono font-semibold text-foreground uppercase tracking-wider flex items-center gap-1.5">
                       <Award className="w-3.5 h-3.5 text-secondary" />
-                      <span>Key Responsibilities:</span>
+                      <span>Key Highlights & Deliverables:</span>
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                       {exp.responsibilities.map((resp) => (

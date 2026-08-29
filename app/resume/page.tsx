@@ -10,14 +10,16 @@ import {
   ShieldCheck,
   Code2,
   Mail,
-  MapPin,
+  Phone,
+  FolderGit2,
   ExternalLink,
+  BookOpen,
 } from "lucide-react";
 
 export const metadata = {
-  title: "Resume | Shruti Vijay Shinde",
+  title: "Resume | Shruti Shinde",
   description:
-    "View and download the professional resume of Shruti Vijay Shinde — Full-Stack Developer & Cybersecurity VAPT Specialist.",
+    "View and download the official resume of Shruti Shinde — Cybersecurity VAPT Specialist & Full-Stack Developer.",
 };
 
 export default function ResumePage() {
@@ -35,9 +37,9 @@ export default function ResumePage() {
 
           <div className="flex flex-wrap items-center gap-3">
             <Button asChild variant="outline" size="sm" className="hidden sm:inline-flex">
-              <a href="/resume.pdf" download="Shruti_Vijay_Shinde_Resume.pdf">
+              <a href="/resume.pdf" download="Shruti_Shinde_Resume.pdf">
                 <Download className="w-4 h-4 mr-2 text-primary" />
-                Download PDF
+                Download Official PDF
               </a>
             </Button>
           </div>
@@ -47,13 +49,13 @@ export default function ResumePage() {
         <div className="space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider">
             <FileText className="w-3.5 h-3.5" />
-            <span>Curriculum Vitae</span>
+            <span>Official Curriculum Vitae</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight">
-            Professional <span className="text-primary">Resume</span>
+            Curriculum <span className="text-primary">Vitae</span>
           </h1>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl">
-            A comprehensive overview of engineering experience, security audits, technical skillsets, and academic certifications.
+            A comprehensive breakdown of VAPT experience, cybersecurity instruction, projects, achievements, and technical skillsets matching the official resume.
           </p>
         </div>
 
@@ -61,168 +63,256 @@ export default function ResumePage() {
         <div className="rounded-3xl border border-muted/80 bg-muted/20 backdrop-blur-xl p-8 sm:p-12 shadow-2xl space-y-12 relative overflow-hidden">
           {/* Header Contact Block */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-muted/60">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-extrabold text-foreground tracking-tight">
-                Shruti Vijay Shinde
+            <div className="space-y-3">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight">
+                SHRUTI SHINDE
               </h2>
               <p className="text-base font-semibold text-primary">
-                Software Developer & Cybersecurity VAPT Specialist
+                Cybersecurity VAPT Specialist & Software Developer
               </p>
-              <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-muted-foreground pt-1">
-                <span className="flex items-center gap-1.5">
-                  <MapPin className="w-3.5 h-3.5 text-secondary" />
-                  India
-                </span>
+              
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-mono text-muted-foreground pt-1">
+                <a
+                  href="mailto:shrutishinde1319@gmail.com"
+                  className="flex items-center gap-1.5 hover:text-primary transition-colors"
+                >
+                  <Mail className="w-3.5 h-3.5 text-primary" />
+                  shrutishinde1319@gmail.com
+                </a>
                 <span>•</span>
                 <span className="flex items-center gap-1.5">
-                  <Mail className="w-3.5 h-3.5 text-primary" />
-                  shindeshrutivijay@gmail.com
+                  <Phone className="w-3.5 h-3.5 text-secondary" />
+                  (+91) 8262804360
                 </span>
+                <span>•</span>
+                <a
+                  href="https://www.linkedin.com/in/shrutishinde19/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 hover:text-primary transition-colors"
+                >
+                  <svg className="w-3.5 h-3.5 fill-current text-primary" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                  </svg>
+                  linkedin.com/in/shrutishinde19
+                </a>
+                <span>•</span>
+                <a
+                  href="https://medium.com/@shrutishinde1319"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 hover:text-primary transition-colors"
+                >
+                  <BookOpen className="w-3.5 h-3.5 text-secondary" />
+                  medium.com/@shrutishinde1319
+                </a>
                 <span>•</span>
                 <a
                   href="https://github.com/ShrutiiiShinde"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors flex items-center gap-1"
+                  className="flex items-center gap-1.5 hover:text-primary transition-colors"
                 >
-                  <ExternalLink className="w-3.5 h-3.5" />
+                  <ExternalLink className="w-3.5 h-3.5 text-primary" />
                   github.com/ShrutiiiShinde
                 </a>
               </div>
             </div>
 
             <Button asChild size="default" variant="default" className="shrink-0">
-              <a href="/resume.pdf" download="Shruti_Vijay_Shinde_Resume.pdf">
+              <a href="/resume.pdf" download="Shruti_Shinde_Resume.pdf">
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume PDF
               </a>
             </Button>
           </div>
 
-          {/* Section 1: Executive Summary */}
-          <div className="space-y-3">
-            <h3 className="text-xs font-mono font-bold uppercase text-primary tracking-wider flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4" />
-              <span>Executive Summary</span>
-            </h3>
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              Software Developer with a specialized background in Cybersecurity, Vulnerability Assessment & Penetration Testing (VAPT), and Cybersecurity Instruction. Proven expertise in full-stack web architecture using Next.js 15, TypeScript, and Tailwind CSS, coupled with hands-on experience identifying OWASP Top 10 vulnerabilities, delivering technical security workshops, and authoring cybersecurity literature on Medium.
-            </p>
-          </div>
-
-          {/* Section 2: Work Experience */}
+          {/* Section 1: EXPERIENCE */}
           <div className="space-y-6">
             <h3 className="text-xs font-mono font-bold uppercase text-primary tracking-wider flex items-center gap-2">
               <Briefcase className="w-4 h-4" />
-              <span>Professional Experience</span>
+              <span>EXPERIENCE</span>
             </h3>
 
             <div className="space-y-8 pl-4 border-l-2 border-primary/30">
-              {/* Entry 1: Cybersecurity Trainer */}
+              {/* Entry 1: Cybersecurity Intern – VAPT */}
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <h4 className="text-lg font-bold text-foreground">
-                    Cyber Security Trainer
+                    Cybersecurity Intern – VAPT <span className="text-muted-foreground font-normal">| Rudra Tech Services</span>
                   </h4>
                   <span className="text-xs font-mono text-secondary font-semibold">
-                    12 Days Training Workshop
+                    6 Months | On-site
                   </span>
                 </div>
-                <p className="text-xs font-mono text-primary font-semibold">
-                  Thundercipher
-                </p>
                 <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
-                  <li>Conducted an intensive 12-day hands-on Cybersecurity & Web Security training program for students.</li>
-                  <li>Taught core security fundamentals, ethical hacking techniques, and OWASP Top 10 web application vulnerabilities.</li>
-                  <li>Guided students through practical lab demonstrations, vulnerability analysis, and defensive security measures.</li>
+                  <li>Analyzed web applications to identify, investigate, and validate technical and security issues.</li>
+                  <li>Used Python, Linux, and security tools for testing, troubleshooting, and technical analysis.</li>
+                  <li>Documented findings with detailed analysis, proof of concepts, and recommended solutions.</li>
                 </ul>
               </div>
 
-              {/* Entry 2: VAPT Intern */}
+              {/* Entry 2: Cybersecurity Trainer */}
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <h4 className="text-lg font-bold text-foreground">
-                    Cybersecurity Intern – VAPT
+                    Cybersecurity Trainer <span className="text-muted-foreground font-normal">| ThunderCipher</span>
                   </h4>
                   <span className="text-xs font-mono text-secondary font-semibold">
-                    6 Months Internship
+                    21 Aug 2026 – 31 Aug 2026 | Ongoing
                   </span>
                 </div>
-                <p className="text-xs font-mono text-muted-foreground">
-                  Vulnerability Assessment & Security Division
-                </p>
                 <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
-                  <li>Executed comprehensive Web Application Vulnerability Assessment & Penetration Testing (VAPT) across REST API endpoints.</li>
-                  <li>Validated OWASP Top 10 risks including SQL Injection, Cross-Site Scripting (XSS), and Broken Access Control.</li>
-                  <li>Authored detailed security audit & risk assessment reports with actionable remediation recommendations.</li>
-                  <li>Engaged in reconnaissance, footprinting, and ethical security testing under strict compliance standards.</li>
+                  <li>Delivering live Web Application Security and OWASP Top 10 sessions for 50+ students.</li>
+                  <li>Creating and presenting practical technical content, demonstrations, and hands-on exercises.</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          {/* Section 3: Technical Skills Matrix */}
-          <div className="space-y-4">
+          {/* Section 2: PROJECT */}
+          <div className="space-y-4 pt-4 border-t border-muted/60">
             <h3 className="text-xs font-mono font-bold uppercase text-primary tracking-wider flex items-center gap-2">
-              <Code2 className="w-4 h-4" />
-              <span>Technical Skills & Tools</span>
+              <FolderGit2 className="w-4 h-4" />
+              <span>PROJECT</span>
             </h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-4 rounded-2xl border border-muted/60 bg-background/50 space-y-2">
-                <span className="text-xs font-mono font-semibold text-primary">Development & Core</span>
-                <p className="text-xs text-muted-foreground">Next.js 15, React 19, TypeScript, JavaScript (ES6+), Tailwind CSS v4, HTML5/CSS3</p>
+            <div className="p-5 rounded-2xl border border-muted/80 bg-background/50 space-y-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <h4 className="text-base font-bold text-foreground">
+                  Secure Developer Portfolio <span className="text-xs font-mono text-secondary ml-2 font-normal">| In Progress</span>
+                </h4>
+                <a
+                  href="https://github.com/ShrutiiiShinde/secure-dev-portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-mono text-primary hover:underline inline-flex items-center gap-1"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  GitHub Repository
+                </a>
               </div>
-              <div className="p-4 rounded-2xl border border-muted/60 bg-background/50 space-y-2">
-                <span className="text-xs font-mono font-semibold text-secondary">Cybersecurity & VAPT</span>
-                <p className="text-xs text-muted-foreground">Web VAPT, Cybersecurity Training, OWASP Top 10, Burp Suite Pro, Nmap, Wireshark</p>
+              <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1">
+                <li>Building a user-focused portfolio with Next.js, TypeScript, Tailwind CSS, shadcn/ui, and Framer Motion.</li>
+                <li>Implementing server-side validation, API handling, error handling, and security controls.</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Section 3: TECHNICAL WRITING */}
+          <div className="space-y-3 pt-4 border-t border-muted/60">
+            <h3 className="text-xs font-mono font-bold uppercase text-primary tracking-wider flex items-center gap-2">
+              <BookOpen className="w-4 h-4" />
+              <span>TECHNICAL WRITING</span>
+            </h3>
+            <p className="text-xs sm:text-sm text-muted-foreground">
+              • Published technical security write-ups on Medium:{" "}
+              <a
+                href="https://medium.com/@shrutishinde1319"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-mono hover:underline inline-flex items-center gap-1 ml-1"
+              >
+                medium.com/@shrutishinde1319
+                <ExternalLink className="w-3 h-3" />
+              </a>
+            </p>
+          </div>
+
+          {/* Section 4: ACHIEVEMENTS & RECOGNITION */}
+          <div className="space-y-4 pt-4 border-t border-muted/60">
+            <h3 className="text-xs font-mono font-bold uppercase text-secondary tracking-wider flex items-center gap-2">
+              <Award className="w-4 h-4" />
+              <span>ACHIEVEMENTS & RECOGNITION</span>
+            </h3>
+
+            <ul className="space-y-3 text-xs sm:text-sm text-muted-foreground">
+              <li className="space-y-1">
+                <div className="font-semibold text-foreground">
+                  • Hall of Fame – TU Delft (Netherlands) & SiteConnect
+                </div>
+                <p className="text-xs text-muted-foreground pl-3">
+                  Recognized for responsible vulnerability disclosure.
+                </p>
+                <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-primary pl-3">
+                  <a
+                    href="https://www.tudelft.nl/Hall-of-fame"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline flex items-center gap-1"
+                  >
+                    TU Delft Hall of Fame <ExternalLink className="w-3 h-3" />
+                  </a>
+                  <span>|</span>
+                  <a
+                    href="https://siteconnect.io/security-hall-of-fame/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline flex items-center gap-1"
+                  >
+                    SiteConnect Hall of Fame <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+              </li>
+              <li>
+                <span className="font-semibold text-foreground">• Academic Excellence Award</span> – MGM University, SOET (2024–2025)
+              </li>
+              <li>
+                <span className="font-semibold text-foreground">• Cisco Networking Academy</span>: Introduction to Cybersecurity
+              </li>
+            </ul>
+          </div>
+
+          {/* Section 5: TECHNICAL SKILLS */}
+          <div className="space-y-4 pt-4 border-t border-muted/60">
+            <h3 className="text-xs font-mono font-bold uppercase text-primary tracking-wider flex items-center gap-2">
+              <Code2 className="w-4 h-4" />
+              <span>TECHNICAL SKILLS</span>
+            </h3>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
+              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
+                <span className="text-primary font-bold">Programming:</span>
+                <p className="text-muted-foreground font-sans">Python, Java, JavaScript, SQL</p>
               </div>
-              <div className="p-4 rounded-2xl border border-muted/60 bg-background/50 space-y-2">
-                <span className="text-xs font-mono font-semibold text-primary">Backend & Storage</span>
-                <p className="text-xs text-muted-foreground">Node.js, Express.js, REST APIs, JWT Auth, MongoDB, PostgreSQL</p>
+              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
+                <span className="text-secondary font-bold">Application & Web:</span>
+                <p className="text-muted-foreground font-sans">HTML, CSS, Next.js, TypeScript, REST APIs</p>
               </div>
-              <div className="p-4 rounded-2xl border border-muted/60 bg-background/50 space-y-2">
-                <span className="text-xs font-mono font-semibold text-secondary">DevSecOps & Controls</span>
-                <p className="text-xs text-muted-foreground">GitHub Actions CI/CD, CodeQL (SAST), Gitleaks, Upstash Redis Rate Limiting, Resend</p>
+              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
+                <span className="text-primary font-bold">Development Tools:</span>
+                <p className="text-muted-foreground font-sans">Git, GitHub, VS Code, Linux</p>
+              </div>
+              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
+                <span className="text-secondary font-bold">Networking:</span>
+                <p className="text-muted-foreground font-sans">TCP/IP, HTTP/HTTPS, DNS, OSI Model</p>
+              </div>
+              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1 sm:col-span-2">
+                <span className="text-primary font-bold">Security Tools:</span>
+                <p className="text-muted-foreground font-sans">Burp Suite, Nmap, Wireshark, Kali Linux</p>
               </div>
             </div>
           </div>
 
-          {/* Section 4: Education & Certifications */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-muted/60">
-            {/* Education */}
-            <div className="space-y-3">
-              <h3 className="text-xs font-mono font-bold uppercase text-primary tracking-wider flex items-center gap-2">
-                <GraduationCap className="w-4 h-4" />
-                <span>Education</span>
-              </h3>
+          {/* Section 6: EDUCATION */}
+          <div className="space-y-3 pt-4 border-t border-muted/60">
+            <h3 className="text-xs font-mono font-bold uppercase text-primary tracking-wider flex items-center gap-2">
+              <GraduationCap className="w-4 h-4" />
+              <span>EDUCATION</span>
+            </h3>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
               <div>
-                <h4 className="text-sm font-bold text-foreground">Bachelor of Computer Science / Cybersecurity</h4>
-                <p className="text-xs text-muted-foreground mt-0.5">Specialized in Application Security & SSDLC</p>
-                <p className="text-xs font-mono text-secondary mt-1 font-semibold">First Class Distinction</p>
+                <h4 className="text-sm font-bold text-foreground">
+                  B.Tech – CSE (IoT Cybersecurity & Blockchain Technology)
+                </h4>
+                <p className="text-xs text-muted-foreground mt-0.5">
+                  MGM University
+                </p>
               </div>
-            </div>
-
-            {/* Certifications */}
-            <div className="space-y-3">
-              <h3 className="text-xs font-mono font-bold uppercase text-secondary tracking-wider flex items-center gap-2">
-                <Award className="w-4 h-4" />
-                <span>Certifications & Honors</span>
-              </h3>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
-                <li className="flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-                  <span>Security Hall of Fame Recognition</span>
-                </li>
-                <li className="flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-                  <span>Responsible Vulnerability Disclosure Awards</span>
-                </li>
-                <li className="flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-                  <span>Cisco CyberOps & Network Security Certified</span>
-                </li>
-              </ul>
+              <div className="text-left sm:text-right font-mono text-xs">
+                <span className="text-secondary font-semibold">2022 – 2026</span>
+                <p className="text-primary font-bold mt-0.5">CGPA: 9.24 / 10</p>
+              </div>
             </div>
           </div>
         </div>

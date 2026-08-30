@@ -14,12 +14,12 @@ const experiences: Experience[] = [
     period: "21 Aug 2026 – 31 Aug 2026",
     type: "Ongoing",
     description:
-      "Delivering live Web Application Security and OWASP Top 10 sessions for 50+ students, creating and presenting practical technical content, demonstrations, and hands-on exercises.",
+      "Delivering live Web Application Security and OWASP Top 10 sessions for 50+ students. Creating and presenting practical technical content, demonstrations, and hands-on exercises.",
     responsibilities: [
-      "Live Web Security & OWASP Top 10 Instruction",
+      "Live Web Application Security Instruction",
+      "OWASP Top 10 Sessions for 50+ Students",
+      "Practical Technical Content & Demos",
       "Interactive Hands-on Lab Exercises",
-      "Demonstrations for 50+ Students",
-      "Technical Content Creation",
     ],
     skills: [
       "Cybersecurity Instruction",
@@ -36,20 +36,19 @@ const experiences: Experience[] = [
     period: "6 Months",
     type: "Internship",
     description:
-      "Analyzed web applications to identify, investigate, and validate technical and security issues using Python, Linux, and security tools. Documented findings with detailed analysis, proof of concepts, and recommended solutions.",
+      "Conducted Vulnerability assessments and Penetration Testing of web applications and analyzed application behavior, workflows, and risks. Translated technical findings into clear reports with business impact, evidence, and actionable recommendations.",
     responsibilities: [
-      "Web Application VAPT Analysis",
-      "Vulnerability Validation & Investigation",
-      "Python & Linux Security Tooling",
-      "Detailed POC & Risk Documentation",
-      "Remediation Recommendations",
+      "Web Application VAPT & Workflow Analysis",
+      "Risk & Exploitability Evaluation",
+      "Detailed Security Reporting with Evidence",
+      "Business Impact & Mitigation Mapping",
     ],
     skills: [
       "VAPT",
       "Python",
       "Linux",
-      "POC Documentation",
       "Security Auditing",
+      "Technical Reporting",
     ],
   },
 ];

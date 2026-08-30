@@ -7,7 +7,6 @@ import {
   Briefcase,
   GraduationCap,
   Award,
-  ShieldCheck,
   Code2,
   Mail,
   Phone,
@@ -146,9 +145,8 @@ export default function ResumePage() {
                   </span>
                 </div>
                 <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
-                  <li>Analyzed web applications to identify, investigate, and validate technical and security issues.</li>
-                  <li>Used Python, Linux, and security tools for testing, troubleshooting, and technical analysis.</li>
-                  <li>Documented findings with detailed analysis, proof of concepts, and recommended solutions.</li>
+                  <li>Conducted Vulnerability assessments and Penetration Testing of web applications and analyzed application behavior, workflows, and risks.</li>
+                  <li>Translated technical findings into clear reports with business impact, evidence, and actionable recommendations.</li>
                 </ul>
               </div>
 
@@ -194,7 +192,7 @@ export default function ResumePage() {
               </div>
               <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1">
                 <li>Building a user-focused portfolio with Next.js, TypeScript, Tailwind CSS, shadcn/ui, and Framer Motion.</li>
-                <li>Implementing server-side validation, API handling, error handling, and security controls.</li>
+                <li>Implementing secure contact forms, server-side validation, rate limiting, spam protection, and production security headers.</li>
               </ul>
             </div>
           </div>
@@ -206,7 +204,7 @@ export default function ResumePage() {
               <span>TECHNICAL WRITING</span>
             </h3>
             <p className="text-xs sm:text-sm text-muted-foreground">
-              • Published technical security write-ups on Medium:{" "}
+              • Publish practical technical articles on Medium, simplifying complex technology and cybersecurity concepts for learners.{" "}
               <a
                 href="https://medium.com/@shrutishinde1319"
                 target="_blank"
@@ -257,9 +255,6 @@ export default function ResumePage() {
               <li>
                 <span className="font-semibold text-foreground">• Academic Excellence Award</span> – MGM University, SOET (2024–2025)
               </li>
-              <li>
-                <span className="font-semibold text-foreground">• Cisco Networking Academy</span>: Introduction to Cybersecurity
-              </li>
             </ul>
           </div>
 
@@ -270,26 +265,18 @@ export default function ResumePage() {
               <span>TECHNICAL SKILLS</span>
             </h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
+            <div className="grid grid-cols-1 gap-4 text-xs font-mono">
               <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
-                <span className="text-primary font-bold">Programming:</span>
-                <p className="text-muted-foreground font-sans">Python, Java, JavaScript, SQL</p>
+                <span className="text-primary font-bold">Product & Communication:</span>
+                <p className="text-muted-foreground font-sans">Technical Writing, Content Creation, Presentation, Public Speaking, Audience Engagement, Problem Solving, Documentation</p>
               </div>
               <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
-                <span className="text-secondary font-bold">Application & Web:</span>
-                <p className="text-muted-foreground font-sans">HTML, CSS, Next.js, TypeScript, REST APIs</p>
+                <span className="text-secondary font-bold">Technology:</span>
+                <p className="text-muted-foreground font-sans">Python, Java, JavaScript, HTML, CSS, SQL, Next.js, TypeScript, Tailwind CSS, Git, GitHub</p>
               </div>
               <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
-                <span className="text-primary font-bold">Development Tools:</span>
-                <p className="text-muted-foreground font-sans">Git, GitHub, VS Code, Linux</p>
-              </div>
-              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
-                <span className="text-secondary font-bold">Networking:</span>
-                <p className="text-muted-foreground font-sans">TCP/IP, HTTP/HTTPS, DNS, OSI Model</p>
-              </div>
-              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1 sm:col-span-2">
-                <span className="text-primary font-bold">Security Tools:</span>
-                <p className="text-muted-foreground font-sans">Burp Suite, Nmap, Wireshark, Kali Linux</p>
+                <span className="text-primary font-bold">Design & Tools:</span>
+                <p className="text-muted-foreground font-sans">Figma, shadcn/ui, Framer Motion, Power BI, Burp Suite, Kali Linux</p>
               </div>
             </div>
           </div>

@@ -10,14 +10,14 @@ const experiences: Experience[] = [
     id: "exp-2",
     role: "Cybersecurity Trainer",
     company: "ThunderCipher",
-    location: "On-site",
-    period: "21 Aug 2026 – 31 Aug 2026",
-    type: "Ongoing",
+    location: "Remote / Online",
+    period: "10 Days OWASP Program",
+    type: "Completed",
     description:
-      "Delivering live Web Application Security and OWASP Top 10 sessions for 50+ students. Creating and presenting practical technical content, demonstrations, and hands-on exercises.",
+      "Successfully completed a 10-day hands-on Web Application Security and OWASP Top 10 training program for 50+ students. Created and presented practical technical content, live demonstrations, and lab exercises.",
     responsibilities: [
-      "Live Web Application Security Instruction",
-      "OWASP Top 10 Sessions for 50+ Students",
+      "10-Day OWASP Top 10 Training Program",
+      "Live Web Security Sessions for 50+ Students",
       "Practical Technical Content & Demos",
       "Interactive Hands-on Lab Exercises",
     ],
@@ -129,7 +129,7 @@ export default function ExperienceSection() {
 
                     <div className="flex items-center gap-1 text-xs font-mono text-primary bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-xl self-start sm:self-center">
                       <ShieldCheck className="w-4 h-4 text-primary" />
-                      <span>{exp.type === "Ongoing" ? "Security Training" : "Security VAPT"}</span>
+                      <span>Security Training</span>
                     </div>
                   </div>
 

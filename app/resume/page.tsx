@@ -138,7 +138,7 @@ export default function ResumePage() {
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <h4 className="text-lg font-bold text-foreground">
-                    Cybersecurity Intern – VAPT <span className="text-muted-foreground font-normal">| Rudra Tech Services</span>
+                    Cybersecurity Intern – VAPT <span className="text-muted-foreground font-normal">| Rudra Tech Services (On-site)</span>
                   </h4>
                   <span className="text-xs font-mono text-secondary font-semibold">
                     6 Months | On-site
@@ -154,15 +154,15 @@ export default function ResumePage() {
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <h4 className="text-lg font-bold text-foreground">
-                    Cybersecurity Trainer <span className="text-muted-foreground font-normal">| ThunderCipher</span>
+                    Cybersecurity Trainer <span className="text-muted-foreground font-normal">| ThunderCipher (Remote / Online)</span>
                   </h4>
                   <span className="text-xs font-mono text-secondary font-semibold">
-                    21 Aug 2026 – 31 Aug 2026 | Ongoing
+                    10-Day OWASP Program | Completed
                   </span>
                 </div>
                 <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
-                  <li>Delivering live Web Application Security and OWASP Top 10 sessions for 50+ students.</li>
-                  <li>Creating and presenting practical technical content, demonstrations, and hands-on exercises.</li>
+                  <li>Delivered a 10-day hands-on Web Application Security and OWASP Top 10 training program for 50+ students.</li>
+                  <li>Created and presented practical technical content, demonstrations, and hands-on lab exercises.</li>
                 </ul>
               </div>
             </div>

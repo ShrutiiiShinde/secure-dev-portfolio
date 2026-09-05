@@ -22,10 +22,10 @@ export const achievementsData: Achievement[] = [
     period: "2024–2025",
     badge: "Academic Honor",
     description:
-      "Awarded Academic Excellence Recognition at MGM University (School of Engineering & Technology) for top academic standing (CGPA 9.24 / 10).",
+      "Awarded Academic Excellence Recognition at MGM University (School of Engineering & Technology) for top academic standing (CGPA 9.15 / 10).",
     highlights: [
       "B.Tech CSE (IoT Cybersecurity & Blockchain Technology)",
-      "Maintained 9.24 / 10 CGPA",
+      "Completed B.Tech with 9.15 / 10 CGPA",
       "MGM University SOET Academic Honor",
     ],
   },

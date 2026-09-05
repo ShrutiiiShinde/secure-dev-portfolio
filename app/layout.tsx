@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     template: "%s | Shruti Vijay Shinde",
   },
   description:
-    "Personal portfolio of Shruti Vijay Shinde — Full-Stack Software Developer & Cybersecurity Specialist focused on VAPT, Secure SDLC, Next.js, and TypeScript.",
+    "Personal portfolio of Shruti Vijay Shinde — Cyber Security Researcher & Software Developer focused on VAPT, Secure SDLC, Next.js, and TypeScript.",
   keywords: [
     "Shruti Vijay Shinde",
-    "Cybersecurity",
+    "Cyber Security Researcher",
     "VAPT",
     "Penetration Testing",
     "Full-Stack Developer",
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     url: "https://github.com/ShrutiiiShinde/secure-dev-portfolio",
     title: "Shruti Vijay Shinde | Secure Developer Portfolio",
     description:
-      "Full-Stack Software Developer & Cybersecurity Specialist focused on VAPT, Secure SDLC, Next.js, and TypeScript.",
+      "Cyber Security Researcher & Software Developer focused on VAPT, Secure SDLC, Next.js, and TypeScript.",
     siteName: "Shruti Vijay Shinde Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Shruti Vijay Shinde | Secure Developer Portfolio",
     description:
-      "Full-Stack Software Developer & Cybersecurity Specialist focused on VAPT, Secure SDLC, Next.js, and TypeScript.",
+      "Cyber Security Researcher & Software Developer focused on VAPT, Secure SDLC, Next.js, and TypeScript.",
     creator: "@ShrutiShinde",
   },
   robots: {

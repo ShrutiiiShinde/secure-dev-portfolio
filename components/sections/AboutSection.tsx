@@ -14,7 +14,7 @@ import {
 export default function AboutSection() {
   const factBadges = [
     {
-      title: "B.Tech CSE (CGPA 9.24/10)",
+      title: "B.Tech CSE (CGPA 9.15/10)",
       description: "MGM University (IoT Cybersecurity & Blockchain)",
       icon: GraduationCap,
       color: "text-primary border-primary/30 bg-primary/10",
@@ -102,7 +102,7 @@ export default function AboutSection() {
             </h3>
 
             <p>
-              I am a Software Developer and Cybersecurity Specialist currently completing my B.Tech in CSE (IoT Cybersecurity & Blockchain Technology) at MGM University with a 9.24 CGPA.
+              I am a Cyber Security Researcher who completed my B.Tech in CSE (IoT Cybersecurity & Blockchain Technology) at MGM University with a 9.15 CGPA.
             </p>
 
             <p>

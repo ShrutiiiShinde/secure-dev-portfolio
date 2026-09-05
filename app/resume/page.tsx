@@ -18,7 +18,7 @@ import {
 export const metadata = {
   title: "Resume | Shruti Shinde",
   description:
-    "View and download the official resume of Shruti Shinde — Cybersecurity VAPT Specialist & Full-Stack Developer.",
+    "View and download the official resume of Shruti Shinde — Cyber Security Researcher & Software Developer.",
 };
 
 export default function ResumePage() {
@@ -67,7 +67,7 @@ export default function ResumePage() {
                 SHRUTI SHINDE
               </h2>
               <p className="text-base font-semibold text-primary">
-                Cybersecurity VAPT Specialist & Software Developer
+                Cyber Security Researcher & Software Developer
               </p>
               
               <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-mono text-muted-foreground pt-1">
@@ -298,7 +298,7 @@ export default function ResumePage() {
               </div>
               <div className="text-left sm:text-right font-mono text-xs">
                 <span className="text-secondary font-semibold">2022 – 2026</span>
-                <p className="text-primary font-bold mt-0.5">CGPA: 9.24 / 10</p>
+                <p className="text-primary font-bold mt-0.5">CGPA: 9.15 / 10</p>
               </div>
             </div>
           </div>

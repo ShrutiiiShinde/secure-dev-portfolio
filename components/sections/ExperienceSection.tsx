@@ -7,6 +7,29 @@ import { Experience } from "@/types";
 // Reusable experience data list matching official resume
 const experiences: Experience[] = [
   {
+    id: "exp-3",
+    role: "Guest Speaker",
+    company: "OWASP Security Summit 2026",
+    location: "Community Event",
+    period: "2026",
+    type: "Speaker",
+    description:
+      "Invited Guest Speaker at the OWASP Security Summit 2026, delivering an in-depth technical session on OWASP Top 10 — Identification and Authentication Failures (A07). Presented practical vulnerability exploitation and mitigation demonstrations alongside core Burp Suite testing methodologies.",
+    responsibilities: [
+      "Technical Session on OWASP A07: Authentication Failures",
+      "Live Vulnerability Exploitation & Remediation Demos",
+      "Hands-on Burp Suite Interception & Testing Concepts",
+      "Cybersecurity Community Knowledge Sharing",
+    ],
+    skills: [
+      "OWASP Top 10",
+      "Authentication Security",
+      "Burp Suite",
+      "Public Speaking",
+      "Vulnerability Demonstration",
+    ],
+  },
+  {
     id: "exp-2",
     role: "Cybersecurity Trainer",
     company: "ThunderCipher",
@@ -79,7 +102,7 @@ export default function ExperienceSection() {
             Professional <span className="text-primary">Experience</span>
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-            Practical application of web application security, cybersecurity training, threat assessments, and vulnerability analysis.
+            Practical application of web application security, cybersecurity training, keynote speaking, and vulnerability assessment.
           </p>
         </motion.div>
 
@@ -129,7 +152,7 @@ export default function ExperienceSection() {
 
                     <div className="flex items-center gap-1 text-xs font-mono text-primary bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-xl self-start sm:self-center">
                       <ShieldCheck className="w-4 h-4 text-primary" />
-                      <span>Security Training</span>
+                      <span>{exp.type === "Speaker" ? "Community Talk" : exp.type === "Completed" ? "Security Training" : "Security VAPT"}</span>
                     </div>
                   </div>
 

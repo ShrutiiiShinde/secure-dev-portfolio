@@ -2,6 +2,20 @@ import { Achievement } from "@/types";
 
 export const achievementsData: Achievement[] = [
   {
+    id: "ach-speaker",
+    title: "Guest Speaker – OWASP Security Summit 2026",
+    organization: "OWASP Community",
+    period: "2026",
+    badge: "Keynote Speaker",
+    description:
+      "Invited Guest Speaker at OWASP Security Summit 2026, delivering an in-depth technical session on OWASP Top 10 — Identification and Authentication Failures (A07) with practical Burp Suite demonstrations.",
+    highlights: [
+      "Technical Session on OWASP A07: Authentication Failures",
+      "Live Vulnerability Exploitation & Remediation Demos",
+      "Burp Suite Interception & Testing Methodologies",
+    ],
+  },
+  {
     id: "ach-1",
     title: "Hall of Fame – TU Delft (Netherlands) & SiteConnect",
     organization: "TU Delft & SiteConnect VDP",

@@ -54,7 +54,7 @@ export default function ResumePage() {
             Curriculum <span className="text-primary">Vitae</span>
           </h1>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl">
-            A comprehensive breakdown of VAPT experience, cybersecurity instruction, projects, achievements, and technical skillsets matching the official resume.
+            A comprehensive breakdown of VAPT experience, keynote speaking, cybersecurity instruction, projects, achievements, and technical skillsets matching the official resume.
           </p>
         </div>
 
@@ -130,23 +130,23 @@ export default function ResumePage() {
           <div className="space-y-6">
             <h3 className="text-xs font-mono font-bold uppercase text-primary tracking-wider flex items-center gap-2">
               <Briefcase className="w-4 h-4" />
-              <span>EXPERIENCE</span>
+              <span>EXPERIENCE & COMMUNITY CONTRIBUTIONS</span>
             </h3>
 
             <div className="space-y-8 pl-4 border-l-2 border-primary/30">
-              {/* Entry 1: Cybersecurity Intern – VAPT */}
+              {/* Entry 1: Guest Speaker – OWASP Security Summit 2026 */}
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <h4 className="text-lg font-bold text-foreground">
-                    Cybersecurity Intern – VAPT <span className="text-muted-foreground font-normal">| Rudra Tech Services (On-site)</span>
+                    Guest Speaker <span className="text-muted-foreground font-normal">| OWASP Security Summit 2026</span>
                   </h4>
                   <span className="text-xs font-mono text-secondary font-semibold">
-                    6 Months | On-site
+                    2026 | Keynote Session
                   </span>
                 </div>
                 <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
-                  <li>Conducted Vulnerability assessments and Penetration Testing of web applications and analyzed application behavior, workflows, and risks.</li>
-                  <li>Translated technical findings into clear reports with business impact, evidence, and actionable recommendations.</li>
+                  <li>Delivered a technical session on OWASP Top 10 — Identification & Authentication Failures (A07).</li>
+                  <li>Presented live vulnerability exploitation, mitigation strategies, and practical Burp Suite testing concepts.</li>
                 </ul>
               </div>
 
@@ -163,6 +163,22 @@ export default function ResumePage() {
                 <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
                   <li>Delivered a 10-day hands-on Web Application Security and OWASP Top 10 training program for 50+ students.</li>
                   <li>Created and presented practical technical content, demonstrations, and hands-on lab exercises.</li>
+                </ul>
+              </div>
+
+              {/* Entry 3: Cybersecurity Intern – VAPT */}
+              <div className="space-y-2">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                  <h4 className="text-lg font-bold text-foreground">
+                    Cybersecurity Intern – VAPT <span className="text-muted-foreground font-normal">| Rudra Tech Services (On-site)</span>
+                  </h4>
+                  <span className="text-xs font-mono text-secondary font-semibold">
+                    6 Months | On-site
+                  </span>
+                </div>
+                <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
+                  <li>Conducted Vulnerability assessments and Penetration Testing of web applications and analyzed application behavior, workflows, and risks.</li>
+                  <li>Translated technical findings into clear reports with business impact, evidence, and actionable recommendations.</li>
                 </ul>
               </div>
             </div>
@@ -227,6 +243,14 @@ export default function ResumePage() {
             <ul className="space-y-3 text-xs sm:text-sm text-muted-foreground">
               <li className="space-y-1">
                 <div className="font-semibold text-foreground">
+                  • Guest Speaker – OWASP Security Summit 2026
+                </div>
+                <p className="text-xs text-muted-foreground pl-3">
+                  Delivered session on OWASP Top 10 Identification & Authentication Failures (A07) with Burp Suite demos.
+                </p>
+              </li>
+              <li className="space-y-1">
+                <div className="font-semibold text-foreground">
                   • Hall of Fame – TU Delft (Netherlands) & SiteConnect
                 </div>
                 <p className="text-xs text-muted-foreground pl-3">
@@ -268,7 +292,7 @@ export default function ResumePage() {
             <div className="grid grid-cols-1 gap-4 text-xs font-mono">
               <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
                 <span className="text-primary font-bold">Product & Communication:</span>
-                <p className="text-muted-foreground font-sans">Technical Writing, Content Creation, Presentation, Public Speaking, Audience Engagement, Problem Solving, Documentation</p>
+                <p className="text-muted-foreground font-sans">Technical Writing, Public Speaking, Keynote Presentation, Content Creation, Audience Engagement, Problem Solving, Documentation</p>
               </div>
               <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
                 <span className="text-secondary font-bold">Technology:</span>

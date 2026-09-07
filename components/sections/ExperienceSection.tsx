@@ -4,51 +4,48 @@ import { motion } from "framer-motion";
 import { Briefcase, Calendar, ShieldCheck, CheckCircle2, Award } from "lucide-react";
 import { Experience } from "@/types";
 
-// Reusable experience data list matching official resume
+// Reusable experience data list matching official PDF resume
 const experiences: Experience[] = [
   {
     id: "exp-3",
     role: "Guest Speaker",
-    company: "OWASP Security Summit 2026",
-    location: "Community Event",
-    period: "2026",
+    company: "OWASP Security Summit 2026 – Knight Secured",
+    location: "Online",
+    period: "Sep 4, 2026",
     type: "Speaker",
     description:
-      "Invited Guest Speaker at the OWASP Security Summit 2026, delivering an in-depth technical session on OWASP Top 10 — Identification and Authentication Failures (A07). Presented practical vulnerability exploitation and mitigation demonstrations alongside core Burp Suite testing methodologies.",
+      "Spoke on “Authentication Failures: How Common Mistakes Lead to Account Compromise.”",
     responsibilities: [
-      "Technical Session on OWASP A07: Authentication Failures",
+      "Authentication Failures: How Common Mistakes Lead to Account Compromise",
       "Live Vulnerability Exploitation & Remediation Demos",
-      "Hands-on Burp Suite Interception & Testing Concepts",
-      "Cybersecurity Community Knowledge Sharing",
+      "OWASP Top 10 A07 Security Principles & Testing",
     ],
     skills: [
       "OWASP Top 10",
       "Authentication Security",
-      "Burp Suite",
       "Public Speaking",
-      "Vulnerability Demonstration",
+      "Burp Suite",
     ],
   },
   {
     id: "exp-2",
     role: "Cybersecurity Trainer",
     company: "ThunderCipher",
-    location: "Remote / Online",
-    period: "10 Days OWASP Program",
-    type: "Completed",
+    location: "Online",
+    period: "21 Aug 2026 – 31 Aug 2026 | 10 Days",
+    type: "Trainer",
     description:
-      "Successfully completed a 10-day hands-on Web Application Security and OWASP Top 10 training program for 50+ students. Created and presented practical technical content, live demonstrations, and lab exercises.",
+      "Delivering live Web Application Security and OWASP Top 10 sessions for 50+ students. Creating and presenting practical technical content, demonstrations, and hands-on exercises.",
     responsibilities: [
-      "10-Day OWASP Top 10 Training Program",
-      "Live Web Security Sessions for 50+ Students",
-      "Practical Technical Content & Demos",
-      "Interactive Hands-on Lab Exercises",
+      "Live Web Application Security & OWASP Top 10 Sessions",
+      "Interactive Technical Content for 50+ Students",
+      "Practical Live Demonstrations & Hands-on Exercises",
     ],
     skills: [
       "Cybersecurity Instruction",
       "OWASP Top 10",
-      "Web Security",
-      "Technical Presentations",
+      "Web Application Security",
+      "Technical Content Creation",
     ],
   },
   {
@@ -59,19 +56,18 @@ const experiences: Experience[] = [
     period: "6 Months",
     type: "Internship",
     description:
-      "Conducted Vulnerability assessments and Penetration Testing of web applications and analyzed application behavior, workflows, and risks. Translated technical findings into clear reports with business impact, evidence, and actionable recommendations.",
+      "Conducted Vulnerability Assessment and Penetration Testing (VAPT) on web applications following industry standard security methodologies and OWASP Top 10 Vulnerabilities. Prepared comprehensive security reports with risk assessments, proof of concepts, and remediation recommendations.",
     responsibilities: [
-      "Web Application VAPT & Workflow Analysis",
-      "Risk & Exploitability Evaluation",
-      "Detailed Security Reporting with Evidence",
-      "Business Impact & Mitigation Mapping",
+      "VAPT on Web Applications using Industry Standards & OWASP Top 10",
+      "Risk Assessments & Proof of Concepts (PoC)",
+      "Remediation Recommendations & Comprehensive Security Reporting",
     ],
     skills: [
       "VAPT",
-      "Python",
-      "Linux",
-      "Security Auditing",
-      "Technical Reporting",
+      "OWASP Top 10",
+      "Risk Assessment",
+      "Report Writing",
+      "Proof of Concept (PoC)",
     ],
   },
 ];
@@ -102,7 +98,7 @@ export default function ExperienceSection() {
             Professional <span className="text-primary">Experience</span>
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-            Practical application of web application security, cybersecurity training, keynote speaking, and vulnerability assessment.
+            VAPT internships, cybersecurity training, keynote speaking, and vulnerability assessments matching official resume records.
           </p>
         </motion.div>
 
@@ -152,7 +148,7 @@ export default function ExperienceSection() {
 
                     <div className="flex items-center gap-1 text-xs font-mono text-primary bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-xl self-start sm:self-center">
                       <ShieldCheck className="w-4 h-4 text-primary" />
-                      <span>{exp.type === "Speaker" ? "Community Talk" : exp.type === "Completed" ? "Security Training" : "Security VAPT"}</span>
+                      <span>{exp.type === "Speaker" ? "Guest Speaker" : exp.type === "Trainer" ? "Security Trainer" : "VAPT Intern"}</span>
                     </div>
                   </div>
 
@@ -165,7 +161,7 @@ export default function ExperienceSection() {
                   <div className="space-y-3">
                     <h4 className="text-xs font-mono font-semibold text-foreground uppercase tracking-wider flex items-center gap-1.5">
                       <Award className="w-3.5 h-3.5 text-secondary" />
-                      <span>Key Highlights & Deliverables:</span>
+                      <span>Key Deliverables & Responsibilities:</span>
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                       {exp.responsibilities.map((resp) => (

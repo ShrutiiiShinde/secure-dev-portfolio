@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Security Architecture | Shruti Vijay Shinde",
+  title: "Security Architecture | Shruti Shinde",
   description:
     "Explore active HTTP security headers, DevSecOps CI/CD pipelines, contact form controls, and secure development architecture engineered into this portfolio.",
 };

@@ -1,15 +1,11 @@
 import ProjectsSection from "@/components/sections/ProjectsSection";
 
 export const metadata = {
-  title: "Projects | Shruti Vijay Shinde",
+  title: "Projects | Shruti Shinde",
   description:
-    "Explore full-stack software and cybersecurity projects developed with secure coding practices.",
+    "Explore full-stack software development and cybersecurity VAPT projects built by Shruti Shinde.",
 };
 
 export default function ProjectsPage() {
-  return (
-    <main className="w-full pt-8">
-      <ProjectsSection />
-    </main>
-  );
+  return <ProjectsSection />;
 }

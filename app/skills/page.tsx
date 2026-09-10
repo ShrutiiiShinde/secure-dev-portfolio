@@ -1,15 +1,11 @@
 import SkillsSection from "@/components/sections/SkillsSection";
 
 export const metadata = {
-  title: "Skills | Shruti Vijay Shinde",
+  title: "Skills | Shruti Shinde",
   description:
-    "Technical skills and toolsets categorized by Development, Backend, Database, Cybersecurity, Networking, and Secure Development.",
+    "Comprehensive breakdown of technical skills, programming languages, web technologies, and security tools.",
 };
 
 export default function SkillsPage() {
-  return (
-    <main className="w-full pt-8">
-      <SkillsSection />
-    </main>
-  );
+  return <SkillsSection />;
 }

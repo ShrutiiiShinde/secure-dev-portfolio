@@ -10,7 +10,7 @@ export default function HeroSection() {
       className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center py-16 lg:py-24 overflow-hidden"
     >
       {/* Background Glow Overlay */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-gradient-to-tr from-primary/15 via-secondary/10 to-transparent rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center relative z-10">
         <div className="flex flex-col items-center space-y-8">
@@ -26,7 +26,7 @@ export default function HeroSection() {
           <HeroEntrance delay={0.15}>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-foreground leading-[1.15]">
               Shruti Shinde&apos;s{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary">
+              <span className="text-primary">
                 Portfolio
               </span>
             </h1>
@@ -55,7 +55,7 @@ export default function HeroSection() {
               {/* 2. View Resume (Outline CTA linking to /resume) */}
               <Button asChild size="lg" variant="outline">
                 <Link href="/resume">
-                  <FileText className="w-4 h-4 mr-1.5 text-secondary" />
+                  <FileText className="w-4 h-4 mr-1.5 text-primary" />
                   View Resume
                 </Link>
               </Button>

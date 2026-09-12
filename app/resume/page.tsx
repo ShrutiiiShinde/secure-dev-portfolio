@@ -10,6 +10,7 @@ import {
   Code2,
   Mail,
   Phone,
+  FolderGit2,
   ExternalLink,
   BookOpen,
   ShieldCheck,
@@ -18,7 +19,7 @@ import {
 export const metadata = {
   title: "Resume | Shruti Shinde",
   description:
-    "View and download the official resume of Shruti Shinde — Cyber Security Researcher & Software Developer.",
+    "View and download the official resume of Shruti Shinde — Cybersecurity VAPT Specialist & Full-Stack Developer.",
 };
 
 export default function ResumePage() {
@@ -54,7 +55,7 @@ export default function ResumePage() {
             Curriculum <span className="text-primary">Vitae</span>
           </h1>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl">
-            A comprehensive breakdown of VAPT experience, keynote speaking, cybersecurity training, security research, and technical skillsets matching the official resume.
+            A comprehensive breakdown of VAPT experience, cybersecurity instruction, projects, achievements, and technical skillsets matching the official resume.
           </p>
         </div>
 
@@ -142,8 +143,9 @@ export default function ResumePage() {
                   </span>
                 </div>
                 <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
-                  <li>Conducted Vulnerability Assessment and Penetration Testing (VAPT) on web applications following industry standard security methodologies and OWASP Top 10 Vulnerabilities.</li>
-                  <li>Prepared comprehensive security reports with risk assessments, proof of concepts, and remediation recommendations.</li>
+                  <li>Conducted security assessments and vulnerability validation on web applications using industry-standard methodologies.</li>
+                  <li>Analyzed security findings, documented results, and prepared reports with risk assessments and remediation recommendations.</li>
+                  <li>Performed reconnaissance, data collection, and analysis to identify application security risks.</li>
                 </ul>
               </div>
 
@@ -154,7 +156,7 @@ export default function ResumePage() {
                     Cybersecurity Trainer <span className="text-muted-foreground font-normal">| ThunderCipher</span>
                   </h4>
                   <span className="text-xs font-mono text-secondary font-semibold">
-                    21 Aug 2026 – 31 Aug 2026 | 10 Days | Online
+                    21 Aug 2026 – 31 Aug 2026 | Ongoing
                   </span>
                 </div>
                 <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
@@ -162,57 +164,35 @@ export default function ResumePage() {
                   <li>Creating and presenting practical technical content, demonstrations, and hands-on exercises.</li>
                 </ul>
               </div>
-
-              {/* Entry 3: Guest Speaker – OWASP Security Summit 2026 */}
-              <div className="space-y-2">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                  <h4 className="text-lg font-bold text-foreground">
-                    Guest Speaker <span className="text-muted-foreground font-normal">| OWASP Security Summit 2026 – Knight Secured</span>
-                  </h4>
-                  <span className="text-xs font-mono text-secondary font-semibold">
-                    Sep 4, 2026 | Online
-                  </span>
-                </div>
-                <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
-                  <li>Spoke on &ldquo;Authentication Failures: How Common Mistakes Lead to Account Compromise.&rdquo;</li>
-                </ul>
-              </div>
             </div>
           </div>
 
-          {/* Section 2: SECURITY RESEARCH */}
+          {/* Section 2: PROJECT */}
           <div className="space-y-4 pt-4 border-t border-muted/60">
             <h3 className="text-xs font-mono font-bold uppercase text-primary tracking-wider flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4" />
-              <span>SECURITY RESEARCH</span>
+              <FolderGit2 className="w-4 h-4" />
+              <span>PROJECT</span>
             </h3>
 
             <div className="p-5 rounded-2xl border border-muted/80 bg-background/50 space-y-3">
-              <h4 className="text-base font-bold text-foreground">
-                Responsible Vulnerability Disclosure
-              </h4>
-              <p className="text-xs sm:text-sm text-muted-foreground">
-                Recognized by <strong className="text-foreground font-semibold">TU Delft (Netherlands)</strong> and <strong className="text-foreground font-semibold">SiteConnect</strong> for responsible vulnerability disclosure.
-              </p>
-              <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-primary pt-1">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <h4 className="text-base font-bold text-foreground">
+                  Secure Developer Portfolio <span className="text-xs font-mono text-secondary ml-2 font-normal">| In Progress</span>
+                </h4>
                 <a
-                  href="https://www.tudelft.nl/Hall-of-fame"
+                  href="https://github.com/ShrutiiiShinde/secure-dev-portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline flex items-center gap-1"
+                  className="text-xs font-mono text-primary hover:underline inline-flex items-center gap-1"
                 >
-                  TU Delft: https://www.tudelft.nl/Hall-of-fame <ExternalLink className="w-3 h-3" />
-                </a>
-                <span>|</span>
-                <a
-                  href="https://siteconnect.io/security-hall-of-fame/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline flex items-center gap-1"
-                >
-                  SiteConnect: https://siteconnect.io/security-hall-of-fame/ <ExternalLink className="w-3 h-3" />
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  GitHub Repository
                 </a>
               </div>
+              <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1">
+                <li>Building a user-focused portfolio with Next.js, TypeScript, Tailwind CSS, shadcn/ui, and Framer Motion.</li>
+                <li>Applying secure development practices to protect user data and application functionality.</li>
+              </ul>
             </div>
           </div>
 
@@ -223,7 +203,7 @@ export default function ResumePage() {
               <span>TECHNICAL WRITING</span>
             </h3>
             <p className="text-xs sm:text-sm text-muted-foreground">
-              • Published Cybersecurity articles. • Medium:{" "}
+              • Published technical articles. • Medium:{" "}
               <a
                 href="https://medium.com/@shrutishinde1319"
                 target="_blank"
@@ -243,7 +223,34 @@ export default function ResumePage() {
               <span>ACHIEVEMENTS & RECOGNITION</span>
             </h3>
 
-            <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground">
+            <ul className="space-y-3 text-xs sm:text-sm text-muted-foreground">
+              <li className="space-y-1">
+                <div className="font-semibold text-foreground">
+                  • Hall of Fame – TU Delft (Netherlands) & SiteConnect
+                </div>
+                <p className="text-xs text-muted-foreground pl-3">
+                  Recognized for responsible vulnerability disclosure.
+                </p>
+                <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-primary pl-3">
+                  <a
+                    href="https://www.tudelft.nl/Hall-of-fame"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline flex items-center gap-1"
+                  >
+                    TU Delft: https://www.tudelft.nl/Hall-of-fame <ExternalLink className="w-3 h-3" />
+                  </a>
+                  <span>|</span>
+                  <a
+                    href="https://siteconnect.io/security-hall-of-fame/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline flex items-center gap-1"
+                  >
+                    SiteConnect: https://siteconnect.io/security-hall-of-fame/ <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+              </li>
               <li>
                 <span className="font-semibold text-foreground">• Academic Excellence Award</span> – MGM University, SOET (2024–2025)
               </li>
@@ -262,20 +269,20 @@ export default function ResumePage() {
 
             <div className="grid grid-cols-1 gap-3.5 text-xs font-mono">
               <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
-                <span className="text-primary font-bold">Cybersecurity:</span>
-                <p className="text-muted-foreground font-sans">Web Application Security, VAPT, Vulnerability Research, OWASP Top 10, Reconnaissance, Responsible Disclosure, Authentication Security, Report Writing</p>
+                <span className="text-primary font-bold">Programming Languages:</span>
+                <p className="text-muted-foreground font-sans">Python, Java, JavaScript, SQL</p>
               </div>
               <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
-                <span className="text-secondary font-bold">Tools:</span>
+                <span className="text-secondary font-bold">Data & Tools:</span>
+                <p className="text-muted-foreground font-sans">Microsoft Excel, Power BI, SQL Databases, Git, GitHub</p>
+              </div>
+              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
+                <span className="text-primary font-bold">Security Tools:</span>
                 <p className="text-muted-foreground font-sans">Burp Suite, Kali Linux, Nmap, Wireshark</p>
               </div>
               <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
-                <span className="text-primary font-bold">Programming:</span>
-                <p className="text-muted-foreground font-sans">Java, JavaScript, SQL, HTML, CSS</p>
-              </div>
-              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
-                <span className="text-secondary font-bold">Networking & Other:</span>
-                <p className="text-muted-foreground font-sans">TCP/IP, HTTP/HTTPS, DNS, OSI Model | Other: Git, GitHub, MS Excel, MS PowerPoint</p>
+                <span className="text-secondary font-bold">Security:</span>
+                <p className="text-muted-foreground font-sans">Information Security, Data Security, Web Application Security, VAPT, Security Testing</p>
               </div>
             </div>
           </div>
@@ -294,7 +301,7 @@ export default function ResumePage() {
               </div>
               <div className="text-left sm:text-right font-mono text-xs">
                 <span className="text-secondary font-semibold">2022 – 2026</span>
-                <p className="text-primary font-bold mt-0.5">CGPA: 9.15 / 10</p>
+                <p className="text-primary font-bold mt-0.5">CGPA: 9.24 / 10</p>
               </div>
             </div>
           </div>

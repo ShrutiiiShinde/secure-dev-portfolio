@@ -2,20 +2,6 @@ import { Achievement } from "@/types";
 
 export const achievementsData: Achievement[] = [
   {
-    id: "ach-speaker",
-    title: "Guest Speaker – OWASP Security Summit 2026",
-    organization: "OWASP Community",
-    period: "2026",
-    badge: "Keynote Speaker",
-    description:
-      "Invited Guest Speaker at OWASP Security Summit 2026, delivering an in-depth technical session on OWASP Top 10 — Identification and Authentication Failures (A07) with practical Burp Suite demonstrations.",
-    highlights: [
-      "Technical Session on OWASP A07: Authentication Failures",
-      "Live Vulnerability Exploitation & Remediation Demos",
-      "Burp Suite Interception & Testing Methodologies",
-    ],
-  },
-  {
     id: "ach-1",
     title: "Hall of Fame – TU Delft (Netherlands) & SiteConnect",
     organization: "TU Delft & SiteConnect VDP",
@@ -36,10 +22,10 @@ export const achievementsData: Achievement[] = [
     period: "2024–2025",
     badge: "Academic Honor",
     description:
-      "Awarded Academic Excellence Recognition at MGM University (School of Engineering & Technology) for top academic standing (CGPA 9.15 / 10).",
+      "Awarded Academic Excellence Recognition at MGM University (School of Engineering & Technology) for top academic standing (CGPA 9.24 / 10).",
     highlights: [
       "B.Tech CSE (IoT Cybersecurity & Blockchain Technology)",
-      "Completed B.Tech with 9.15 / 10 CGPA",
+      "Maintained 9.24 / 10 CGPA",
       "MGM University SOET Academic Honor",
     ],
   },

@@ -7,33 +7,12 @@ import { Experience } from "@/types";
 // Reusable experience data list matching official PDF resume
 const experiences: Experience[] = [
   {
-    id: "exp-3",
-    role: "Guest Speaker",
-    company: "OWASP Security Summit 2026 – Knight Secured",
-    location: "Online",
-    period: "Sep 4, 2026",
-    type: "Speaker",
-    description:
-      "Spoke on “Authentication Failures: How Common Mistakes Lead to Account Compromise.”",
-    responsibilities: [
-      "Authentication Failures: How Common Mistakes Lead to Account Compromise",
-      "Live Vulnerability Exploitation & Remediation Demos",
-      "OWASP Top 10 A07 Security Principles & Testing",
-    ],
-    skills: [
-      "OWASP Top 10",
-      "Authentication Security",
-      "Public Speaking",
-      "Burp Suite",
-    ],
-  },
-  {
     id: "exp-2",
     role: "Cybersecurity Trainer",
     company: "ThunderCipher",
-    location: "Online",
-    period: "21 Aug 2026 – 31 Aug 2026 | 10 Days",
-    type: "Trainer",
+    location: "On-site",
+    period: "21 Aug 2026 – 31 Aug 2026",
+    type: "Ongoing",
     description:
       "Delivering live Web Application Security and OWASP Top 10 sessions for 50+ students. Creating and presenting practical technical content, demonstrations, and hands-on exercises.",
     responsibilities: [
@@ -44,8 +23,8 @@ const experiences: Experience[] = [
     skills: [
       "Cybersecurity Instruction",
       "OWASP Top 10",
-      "Web Application Security",
-      "Technical Content Creation",
+      "Web Security",
+      "Technical Presentations",
     ],
   },
   {
@@ -56,18 +35,18 @@ const experiences: Experience[] = [
     period: "6 Months",
     type: "Internship",
     description:
-      "Conducted Vulnerability Assessment and Penetration Testing (VAPT) on web applications following industry standard security methodologies and OWASP Top 10 Vulnerabilities. Prepared comprehensive security reports with risk assessments, proof of concepts, and remediation recommendations.",
+      "Conducted security assessments and vulnerability validation on web applications using industry-standard methodologies. Analyzed security findings, documented results, and prepared reports with risk assessments and remediation recommendations. Performed reconnaissance, data collection, and analysis to identify application security risks.",
     responsibilities: [
-      "VAPT on Web Applications using Industry Standards & OWASP Top 10",
-      "Risk Assessments & Proof of Concepts (PoC)",
-      "Remediation Recommendations & Comprehensive Security Reporting",
+      "Security Assessments & Vulnerability Validation",
+      "Risk Assessments & Remediation Recommendations",
+      "Reconnaissance & Application Security Risk Analysis",
     ],
     skills: [
       "VAPT",
-      "OWASP Top 10",
+      "Reconnaissance",
       "Risk Assessment",
       "Report Writing",
-      "Proof of Concept (PoC)",
+      "Security Testing",
     ],
   },
 ];
@@ -98,7 +77,7 @@ export default function ExperienceSection() {
             Professional <span className="text-primary">Experience</span>
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-            VAPT internships, cybersecurity training, keynote speaking, and vulnerability assessments matching official resume records.
+            Practical application of web application security, cybersecurity training, threat assessments, and vulnerability analysis.
           </p>
         </motion.div>
 
@@ -148,7 +127,7 @@ export default function ExperienceSection() {
 
                     <div className="flex items-center gap-1 text-xs font-mono text-primary bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-xl self-start sm:self-center">
                       <ShieldCheck className="w-4 h-4 text-primary" />
-                      <span>{exp.type === "Speaker" ? "Guest Speaker" : exp.type === "Trainer" ? "Security Trainer" : "VAPT Intern"}</span>
+                      <span>{exp.type === "Ongoing" ? "Security Training" : "Security VAPT"}</span>
                     </div>
                   </div>
 

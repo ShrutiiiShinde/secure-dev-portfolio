@@ -1,9 +1,9 @@
 import ContactSection from "@/components/sections/ContactSection";
 
 export const metadata = {
-  title: "Contact | Shruti Shinde",
+  title: "Contact | Shruti Vijay Shinde",
   description:
-    "Get in touch with Shruti Shinde for software engineering, cybersecurity VAPT, and technical writing opportunities.",
+    "Get in touch with Shruti Vijay Shinde for software engineering, cybersecurity VAPT, and technical writing opportunities.",
 };
 
 export default function ContactPage() {

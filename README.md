@@ -1,4 +1,4 @@
-# Shruti Shinde — Secure Developer Portfolio
+# Shruti Vijay Shinde — Secure Developer Portfolio
 
 [![DevSecOps CI Pipeline](https://github.com/ShrutiiiShinde/secure-dev-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/ShrutiiiShinde/secure-dev-portfolio/actions/workflows/ci.yml)
 

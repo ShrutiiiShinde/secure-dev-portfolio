@@ -1,7 +1,7 @@
 import SkillsSection from "@/components/sections/SkillsSection";
 
 export const metadata = {
-  title: "Skills | Shruti Shinde",
+  title: "Skills | Shruti Vijay Shinde",
   description:
     "Comprehensive breakdown of technical skills, programming languages, web technologies, and security tools.",
 };

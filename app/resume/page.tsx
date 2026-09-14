@@ -13,7 +13,6 @@ import {
   FolderGit2,
   ExternalLink,
   BookOpen,
-  ShieldCheck,
 } from "lucide-react";
 
 export const metadata = {
@@ -143,9 +142,8 @@ export default function ResumePage() {
                   </span>
                 </div>
                 <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
-                  <li>Conducted security assessments and vulnerability validation on web applications using industry-standard methodologies.</li>
-                  <li>Analyzed security findings, documented results, and prepared reports with risk assessments and remediation recommendations.</li>
-                  <li>Performed reconnaissance, data collection, and analysis to identify application security risks.</li>
+                  <li>Conducted Vulnerability Assessment and Penetration Testing (VAPT) on web applications following industry-standard methodologies and OWASP Top 10 Vulnerabilities.</li>
+                  <li>Prepared comprehensive security reports with risk assessments, proof of concepts, and remediation recommendations.</li>
                 </ul>
               </div>
 
@@ -191,7 +189,7 @@ export default function ResumePage() {
               </div>
               <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1">
                 <li>Building a user-focused portfolio with Next.js, TypeScript, Tailwind CSS, shadcn/ui, and Framer Motion.</li>
-                <li>Applying secure development practices to protect user data and application functionality.</li>
+                <li>Implementing secure contact forms, server-side validation, rate limiting and production security headers.</li>
               </ul>
             </div>
           </div>
@@ -269,20 +267,20 @@ export default function ResumePage() {
 
             <div className="grid grid-cols-1 gap-3.5 text-xs font-mono">
               <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
-                <span className="text-primary font-bold">Programming Languages:</span>
-                <p className="text-muted-foreground font-sans">Python, Java, JavaScript, SQL</p>
-              </div>
-              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
-                <span className="text-secondary font-bold">Data & Tools:</span>
-                <p className="text-muted-foreground font-sans">Microsoft Excel, Power BI, SQL Databases, Git, GitHub</p>
-              </div>
-              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
                 <span className="text-primary font-bold">Security Tools:</span>
                 <p className="text-muted-foreground font-sans">Burp Suite, Kali Linux, Nmap, Wireshark</p>
               </div>
               <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
-                <span className="text-secondary font-bold">Security:</span>
-                <p className="text-muted-foreground font-sans">Information Security, Data Security, Web Application Security, VAPT, Security Testing</p>
+                <span className="text-secondary font-bold">Pentest Skills:</span>
+                <p className="text-muted-foreground font-sans">Web Application VAPT, Recon, OWASP Top 10, VAPT Report Writing, PowerBI</p>
+              </div>
+              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
+                <span className="text-primary font-bold">Programming Languages:</span>
+                <p className="text-muted-foreground font-sans">Python, Java, JavaScript, HTML, CSS, SQL, Next.js, TypeScript, Tailwind CSS, Git, GitHub</p>
+              </div>
+              <div className="p-3.5 rounded-xl border border-muted/60 bg-background/50 space-y-1">
+                <span className="text-secondary font-bold">Networking:</span>
+                <p className="text-muted-foreground font-sans">TCP/IP, HTTP/HTTPS, DNS, OSI Model</p>
               </div>
             </div>
           </div>

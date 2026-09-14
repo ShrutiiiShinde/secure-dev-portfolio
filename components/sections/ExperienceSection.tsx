@@ -35,18 +35,18 @@ const experiences: Experience[] = [
     period: "6 Months",
     type: "Internship",
     description:
-      "Conducted security assessments and vulnerability validation on web applications using industry-standard methodologies. Analyzed security findings, documented results, and prepared reports with risk assessments and remediation recommendations. Performed reconnaissance, data collection, and analysis to identify application security risks.",
+      "Conducted Vulnerability Assessment and Penetration Testing (VAPT) on web applications following industry standard security methodologies and OWASP Top 10 Vulnerabilities. Prepared comprehensive security reports with risk assessments, proof of concepts, and remediation recommendations.",
     responsibilities: [
-      "Security Assessments & Vulnerability Validation",
-      "Risk Assessments & Remediation Recommendations",
-      "Reconnaissance & Application Security Risk Analysis",
+      "Web Application VAPT following Industry Standards & OWASP Top 10",
+      "Risk Assessments & Proof of Concepts (PoC)",
+      "Remediation Recommendations & Comprehensive Security Reporting",
     ],
     skills: [
       "VAPT",
-      "Reconnaissance",
+      "OWASP Top 10",
       "Risk Assessment",
       "Report Writing",
-      "Security Testing",
+      "Proof of Concept (PoC)",
     ],
   },
 ];
@@ -77,7 +77,7 @@ export default function ExperienceSection() {
             Professional <span className="text-primary">Experience</span>
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-            Practical application of web application security, cybersecurity training, threat assessments, and vulnerability analysis.
+            VAPT internships, cybersecurity training, threat assessments, and vulnerability analysis matching official resume records.
           </p>
         </motion.div>
 

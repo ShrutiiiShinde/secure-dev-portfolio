@@ -8,40 +8,9 @@ export type SkillCategory = {
 
 export const skillsData: SkillCategory[] = [
   {
-    id: "programming-languages",
-    category: "Programming Languages",
-    description: "Core programming, scripting, database querying, and logic development",
-    core: [
-      "Python",
-      "Java",
-      "JavaScript",
-      "SQL",
-    ],
-    familiar: [
-      "HTML",
-      "CSS",
-    ],
-  },
-  {
-    id: "data-tools",
-    category: "Data & Tools",
-    description: "Data analysis, business intelligence, database management, and version control",
-    core: [
-      "Microsoft Excel",
-      "Power BI",
-      "SQL Databases",
-      "Git",
-      "GitHub",
-    ],
-    familiar: [
-      "VS Code",
-      "Linux CLI",
-    ],
-  },
-  {
     id: "security-tools",
     category: "Security Tools",
-    description: "Penetration testing utilities, proxy interception, and network packet analysis",
+    description: "Industry standard security analysis, penetration testing, and proxy interception tools",
     core: [
       "Burp Suite",
       "Kali Linux",
@@ -49,24 +18,59 @@ export const skillsData: SkillCategory[] = [
       "Wireshark",
     ],
     familiar: [
-      "Linux Security Utilities",
+      "Linux CLI",
+      "Web Proxies",
     ],
   },
   {
-    id: "security-domain",
-    category: "Security",
-    description: "Core cybersecurity domains, data protection, VAPT, and application testing",
+    id: "pentest-skills",
+    category: "Pentest Skills",
+    description: "Web application vulnerability assessment, reconnaissance, and report writing",
     core: [
-      "Information Security",
-      "Data Security",
-      "Web Application Security",
-      "VAPT",
-      "Security Testing",
+      "Web Application VAPT",
+      "Recon",
+      "OWASP Top 10",
+      "VAPT Report Writing",
+      "PowerBI",
     ],
     familiar: [
-      "OWASP Top 10",
-      "Vulnerability Validation",
-      "Reconnaissance",
+      "Proof of Concept (PoC)",
+      "Risk Assessment",
+    ],
+  },
+  {
+    id: "programming-languages",
+    category: "Programming Languages",
+    description: "Software development, web technologies, scripting, databases, and version control",
+    core: [
+      "Python",
+      "Java",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "SQL",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Git",
+      "GitHub",
+    ],
+    familiar: [
+      "REST APIs",
+    ],
+  },
+  {
+    id: "networking",
+    category: "Networking",
+    description: "Core networking protocols, web security communication, and architectural models",
+    core: [
+      "TCP/IP",
+      "HTTP / HTTPS",
+      "DNS",
+      "OSI Model",
+    ],
+    familiar: [
+      "Network Packet Analysis",
     ],
   },
 ];

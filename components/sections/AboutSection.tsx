@@ -14,14 +14,14 @@ import {
 export default function AboutSection() {
   const factBadges = [
     {
-      title: "B.Tech CSE (CGPA 9.24/10)",
+      title: "B.Tech CSE (CGPA 9.15/10)",
       description: "MGM University (IoT Cybersecurity & Blockchain)",
       icon: GraduationCap,
       color: "text-primary border-primary/30 bg-primary/10",
     },
     {
       title: "VAPT & Security Experience",
-      description: "Rudra Tech Services & ThunderCipher Trainer",
+      description: "Rudra Tech, ThunderCipher & OWASP Speaker",
       icon: ShieldCheck,
       color: "text-secondary border-secondary/30 bg-secondary/10",
     },
@@ -102,11 +102,11 @@ export default function AboutSection() {
             </h3>
 
             <p>
-              I am a Cybersecurity Specialist & Software Developer currently completing my B.Tech in CSE (IoT Cybersecurity & Blockchain Technology) at MGM University with a 9.24 CGPA.
+              I am a Cybersecurity Specialist & Software Developer currently completing my B.Tech in CSE (IoT Cybersecurity & Blockchain Technology) at MGM University with a 9.15 CGPA.
             </p>
 
             <p>
-              My experience spans hands-on Web Application Vulnerability Assessment & Penetration Testing (VAPT) at Rudra Tech Services, alongside delivering live web security and OWASP Top 10 training sessions for 50+ students at ThunderCipher.
+              My experience spans hands-on Web Application Vulnerability Assessment & Penetration Testing (VAPT) at Rudra Tech Services, delivering live security training at ThunderCipher, and speaking as a Guest Speaker at OWASP Security Summit 2026.
             </p>
 
             <p>

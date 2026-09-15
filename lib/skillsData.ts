@@ -8,9 +8,28 @@ export type SkillCategory = {
 
 export const skillsData: SkillCategory[] = [
   {
-    id: "security-tools",
-    category: "Security Tools",
-    description: "Industry standard security analysis, penetration testing, and proxy interception tools",
+    id: "cybersecurity",
+    category: "Cybersecurity",
+    description: "Web application penetration testing, vulnerability research, reconnaissance, and security audit reporting",
+    core: [
+      "Web Application Security",
+      "VAPT",
+      "Vulnerability Research",
+      "OWASP Top 10",
+      "Reconnaissance",
+      "Responsible Disclosure",
+      "Authentication Security",
+      "Report Writing",
+    ],
+    familiar: [
+      "Risk Assessment",
+      "Proof of Concept (PoC)",
+    ],
+  },
+  {
+    id: "tools",
+    category: "Tools",
+    description: "Industry standard security analysis, Linux environments, and network traffic tools",
     core: [
       "Burp Suite",
       "Kali Linux",
@@ -23,54 +42,39 @@ export const skillsData: SkillCategory[] = [
     ],
   },
   {
-    id: "pentest-skills",
-    category: "Pentest Skills",
-    description: "Web application vulnerability assessment, reconnaissance, and report writing",
+    id: "programming",
+    category: "Programming",
+    description: "Core programming languages, web scripting, markup, and relational databases",
     core: [
-      "Web Application VAPT",
-      "Recon",
-      "OWASP Top 10",
-      "VAPT Report Writing",
-      "PowerBI",
-    ],
-    familiar: [
-      "Proof of Concept (PoC)",
-      "Risk Assessment",
-    ],
-  },
-  {
-    id: "programming-languages",
-    category: "Programming Languages",
-    description: "Software development, web technologies, scripting, databases, and version control",
-    core: [
-      "Python",
       "Java",
       "JavaScript",
+      "SQL",
       "HTML",
       "CSS",
-      "SQL",
+    ],
+    familiar: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Git",
-      "GitHub",
-    ],
-    familiar: [
-      "REST APIs",
     ],
   },
   {
-    id: "networking",
-    category: "Networking",
-    description: "Core networking protocols, web security communication, and architectural models",
+    id: "networking-other",
+    category: "Networking & Other",
+    description: "Network communications, internet protocols, version control, and document preparation tools",
     core: [
       "TCP/IP",
-      "HTTP / HTTPS",
+      "HTTP/HTTPS",
       "DNS",
       "OSI Model",
+      "Git",
+      "GitHub",
+      "MS Excel",
+      "MS PowerPoint",
     ],
     familiar: [
       "Network Packet Analysis",
+      "PowerBI",
     ],
   },
 ];

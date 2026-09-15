@@ -7,12 +7,33 @@ import { Experience } from "@/types";
 // Reusable experience data list matching official PDF resume
 const experiences: Experience[] = [
   {
+    id: "exp-3",
+    role: "Guest Speaker",
+    company: "OWASP Security Summit 2026 – Knight Secured",
+    location: "Online",
+    period: "Sep 4, 2026",
+    type: "Online",
+    description:
+      'Spoke on "Authentication Failures: How Common Mistakes Lead to Account Compromise."',
+    responsibilities: [
+      "Keynote Talk on Authentication Failures & Account Compromise",
+      "Analysis of Common Implementation Mistakes",
+      "Security Best Practices & Mitigation Strategies",
+    ],
+    skills: [
+      "Authentication Security",
+      "Public Speaking",
+      "OWASP Security Summit",
+      "Account Compromise Mitigation",
+    ],
+  },
+  {
     id: "exp-2",
     role: "Cybersecurity Trainer",
     company: "ThunderCipher",
-    location: "On-site",
+    location: "Online",
     period: "21 Aug 2026 – 31 Aug 2026",
-    type: "Ongoing",
+    type: "10 Days | Online",
     description:
       "Delivering live Web Application Security and OWASP Top 10 sessions for 50+ students. Creating and presenting practical technical content, demonstrations, and hands-on exercises.",
     responsibilities: [
@@ -33,7 +54,7 @@ const experiences: Experience[] = [
     company: "Rudra Tech Services",
     location: "On-site",
     period: "6 Months",
-    type: "Internship",
+    type: "On-site",
     description:
       "Conducted Vulnerability Assessment and Penetration Testing (VAPT) on web applications following industry standard security methodologies and OWASP Top 10 Vulnerabilities. Prepared comprehensive security reports with risk assessments, proof of concepts, and remediation recommendations.",
     responsibilities: [

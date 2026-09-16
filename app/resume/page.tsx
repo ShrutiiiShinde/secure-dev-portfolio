@@ -18,7 +18,7 @@ import {
 export const metadata = {
   title: "Resume | Shruti Shinde",
   description:
-    "View and download the official resume of Shruti Shinde — Cybersecurity VAPT Specialist & Full-Stack Developer.",
+    "View and download the official resume of Shruti Shinde — Cybersecurity Researcher & B.Tech CSE Graduate.",
 };
 
 export default function ResumePage() {
@@ -322,7 +322,7 @@ export default function ResumePage() {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
               <div>
                 <h4 className="text-sm font-bold text-foreground">
-                  B.Tech – CSE (IoT Cybersecurity & Blockchain Technology) <span className="text-muted-foreground font-normal">| MGM University</span>
+                  B.Tech – CSE (IoT Cybersecurity & Blockchain Technology) <span className="text-muted-foreground font-normal">| School of Engineering and Technology MGM University</span>
                 </h4>
               </div>
               <div className="text-left sm:text-right font-mono text-xs">

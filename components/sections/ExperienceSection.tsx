@@ -7,6 +7,27 @@ import { Experience } from "@/types";
 // Reusable experience data list matching official PDF resume
 const experiences: Experience[] = [
   {
+    id: "exp-4",
+    role: "Guest Speaker",
+    company: "AxiomSecureCrafts (ASC)",
+    location: "Online",
+    period: "20 Sep 2026",
+    type: "Online",
+    description:
+      'Delivered a technical session on "Broken Access Control" vulnerabilities, exploitation vectors, and secure authorization controls.',
+    responsibilities: [
+      'Keynote session on "Broken Access Control" (OWASP Top 10 A01:2021)',
+      "Analysis of Privilege Escalation & Insecure Direct Object References (IDOR)",
+      "Best Practices for Implementing Robust Access Control & Authorization Policies",
+    ],
+    skills: [
+      "Broken Access Control",
+      "OWASP Top 10",
+      "Authorization Security",
+      "Public Speaking",
+    ],
+  },
+  {
     id: "exp-3",
     role: "Guest Speaker",
     company: "OWASP Security Summit 2026 – Knight Secured",

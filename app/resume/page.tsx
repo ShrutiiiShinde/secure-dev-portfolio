@@ -196,7 +196,7 @@ export default function ResumePage() {
                 </ul>
               </div>
 
-              {/* Entry 3: Guest Speaker */}
+              {/* Entry 3: Guest Speaker - OWASP */}
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <h4 className="text-lg font-bold text-foreground">
@@ -208,6 +208,21 @@ export default function ResumePage() {
                 </div>
                 <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
                   <li>Spoke on &ldquo;Authentication Failures: How Common Mistakes Lead to Account Compromise.&rdquo;</li>
+                </ul>
+              </div>
+
+              {/* Entry 4: Guest Speaker - AxiomSecureCrafts */}
+              <div className="space-y-2">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                  <h4 className="text-lg font-bold text-foreground">
+                    Guest Speaker <span className="text-muted-foreground font-normal">| AxiomSecureCrafts (ASC)</span>
+                  </h4>
+                  <span className="text-xs font-mono text-secondary font-semibold">
+                    20 Sep 2026 | Online
+                  </span>
+                </div>
+                <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
+                  <li>Spoke on &ldquo;Broken Access Control&rdquo; (OWASP Top 10 A01:2021) focusing on authorization flaws, privilege escalation, and secure remediation.</li>
                 </ul>
               </div>
             </div>

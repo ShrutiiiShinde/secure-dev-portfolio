@@ -106,7 +106,7 @@ export default function AboutSection() {
             </p>
 
             <p>
-              My experience spans hands-on Web Application Vulnerability Assessment & Penetration Testing (VAPT) at Rudra Tech Services, delivering live security training at ThunderCipher, and speaking as a Guest Speaker at OWASP Security Summit 2026.
+              My experience spans hands-on Web Application Vulnerability Assessment & Penetration Testing (VAPT) at Rudra Tech Services, delivering live security training at ThunderCipher, and speaking as a Guest Speaker at AxiomSecureCrafts (ASC) and OWASP Security Summit 2026.
             </p>
 
             <p>

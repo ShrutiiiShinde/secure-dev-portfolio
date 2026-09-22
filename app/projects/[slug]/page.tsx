@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: ProjectDetailPageProps) {
   const project = projectsData.find((p) => p.slug === slug);
   if (!project) return { title: "Project Not Found" };
   return {
-    title: `${project.title} | Shruti Shinde`,
+    title: `${project.title} | Shruti Vijay Shinde`,
     description: project.description,
   };
 }

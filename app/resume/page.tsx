@@ -16,9 +16,9 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Resume | Shruti Shinde",
+  title: "Resume | Shruti Vijay Shinde",
   description:
-    "View and download the official resume of Shruti Shinde — Cybersecurity Researcher & B.Tech CSE Graduate.",
+    "View and download the official resume of Shruti Vijay Shinde — Cybersecurity Researcher & B.Tech CSE Graduate.",
 };
 
 export default function ResumePage() {

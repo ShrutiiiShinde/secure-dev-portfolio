@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Security Architecture | Shruti Vijay Shinde",
+  title: "Security Architecture | Shruti Shinde",
   description:
     "Comprehensive breakdown of the production security architecture, HTTP security headers, and DevSecOps controls implementing secure SDLC in this portfolio.",
 };

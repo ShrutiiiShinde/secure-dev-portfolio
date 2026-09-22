@@ -76,7 +76,7 @@ export async function POST(req: NextRequest) {
             <hr style="border: 0; border-top: 1px solid #cbd5e1; margin: 20px 0;" />
             <p style="white-space: pre-wrap; font-size: 15px; line-height: 1.6; color: #334155;">${message}</p>
             <hr style="border: 0; border-top: 1px solid #cbd5e1; margin: 20px 0;" />
-            <p style="font-size: 12px; color: #94a3b8;">Sent securely from Shruti Vijay Shinde Developer Portfolio.</p>
+            <p style="font-size: 12px; color: #94a3b8;">Sent securely from Shruti Shinde Developer Portfolio.</p>
           </div>
         `,
       });

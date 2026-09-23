@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Shruti Shinde | Secure Developer Portfolio",
     description:
       "Cyber Security Researcher & Software Developer focused on VAPT, Secure SDLC, Next.js, and TypeScript.",
-    siteName: "Shruti Shinde Portfolio",
+    siteName: "Shruti's Portfolio",
   },
   twitter: {
     card: "summary_large_image",

@@ -25,7 +25,7 @@ export default function HeroSection() {
           {/* Title */}
           <HeroEntrance delay={0.15}>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-foreground leading-[1.15]">
-              Shruti Shinde&apos;s{" "}
+              Shruti&apos;s{" "}
               <span className="text-primary">
                 Portfolio
               </span>

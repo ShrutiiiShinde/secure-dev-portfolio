@@ -3,15 +3,16 @@ import { Achievement } from "@/types";
 export const achievementsData: Achievement[] = [
   {
     id: "ach-1",
-    title: "Hall of Fame – TU Delft (Netherlands) & SiteConnect",
-    organization: "TU Delft & SiteConnect VDP",
+    title: "Hall of Fame – TU Delft, SiteConnect & PodBanter",
+    organization: "TU Delft, SiteConnect & PodBanter VDP",
     period: "2024",
     badge: "Hall of Fame",
     description:
-      "Recognized and listed in the official Hall of Fame for TU Delft (Netherlands) and SiteConnect for responsible vulnerability disclosure.",
+      "Recognized and listed in official Security Hall of Fame programs for TU Delft (Netherlands), SiteConnect, and PodBanter for responsible vulnerability disclosure.",
     highlights: [
       "TU Delft Hall of Fame: tudelft.nl/Hall-of-fame",
       "SiteConnect Hall of Fame: siteconnect.io/security-hall-of-fame/",
+      "PodBanter Hall of Fame: podbanter.com/security/hall-of-fame",
       "Identified and responsibly disclosed web application vulnerabilities",
     ],
   },

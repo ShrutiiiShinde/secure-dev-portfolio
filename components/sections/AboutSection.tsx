@@ -27,7 +27,7 @@ export default function AboutSection() {
     },
     {
       title: "Hall of Fame Recognition",
-      description: "TU Delft, SiteConnect & PodBanter",
+      description: "TU Delft, SiteConnect, PodBanter & Tolvyn",
       icon: Trophy,
       color: "text-warning border-warning/30 bg-warning/10",
     },

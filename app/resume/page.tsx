@@ -240,7 +240,7 @@ export default function ResumePage() {
                 Responsible Vulnerability Disclosure
               </h4>
               <p className="text-xs sm:text-sm text-muted-foreground">
-                Recognized by <strong className="text-foreground">TU Delft (Netherlands)</strong>, <strong className="text-foreground">SiteConnect</strong>, and <strong className="text-foreground">PodBanter</strong> for responsible vulnerability disclosure.
+                Recognized by <strong className="text-foreground">TU Delft (Netherlands)</strong>, <strong className="text-foreground">SiteConnect</strong>, <strong className="text-foreground">PodBanter</strong>, and <strong className="text-foreground">Tolvyn</strong> for responsible vulnerability disclosure.
               </p>
               <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-primary pt-1">
                 <a
@@ -268,6 +268,15 @@ export default function ResumePage() {
                   className="hover:underline flex items-center gap-1"
                 >
                   PodBanter: https://podbanter.com/security/hall-of-fame <ExternalLink className="w-3 h-3" />
+                </a>
+                <span>|</span>
+                <a
+                  href="https://tolvyn.io/pages/security"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline flex items-center gap-1"
+                >
+                  Tolvyn: https://tolvyn.io/pages/security <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
             </div>

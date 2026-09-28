@@ -196,33 +196,18 @@ export default function ResumePage() {
                 </ul>
               </div>
 
-              {/* Entry 3: Guest Speaker - OWASP */}
+              {/* Entry 3: Guest Speaker */}
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <h4 className="text-lg font-bold text-foreground">
-                    Guest Speaker <span className="text-muted-foreground font-normal">| OWASP Security Summit 2026 – Knight Secured</span>
+                    Guest Speaker <span className="text-muted-foreground font-normal">| Knight Secured & AxiomSecureCrafts</span>
                   </h4>
                   <span className="text-xs font-mono text-secondary font-semibold">
-                    Sep 4, 2026 | Online
+                    Sep 4 & Sep 21, 2026 | Online
                   </span>
                 </div>
                 <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
-                  <li>Spoke on &ldquo;Authentication Failures: How Common Mistakes Lead to Account Compromise.&rdquo;</li>
-                </ul>
-              </div>
-
-              {/* Entry 4: Guest Speaker - AxiomSecureCrafts */}
-              <div className="space-y-2">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                  <h4 className="text-lg font-bold text-foreground">
-                    Guest Speaker <span className="text-muted-foreground font-normal">| AxiomSecureCrafts (ASC)</span>
-                  </h4>
-                  <span className="text-xs font-mono text-secondary font-semibold">
-                    20 Sep 2026 | Online
-                  </span>
-                </div>
-                <ul className="list-disc list-inside text-xs sm:text-sm text-muted-foreground space-y-1.5 pt-2">
-                  <li>Spoke on &ldquo;Broken Access Control&rdquo; (OWASP Top 10 A01:2021) focusing on authorization flaws, privilege escalation, and secure remediation.</li>
+                  <li>Delivered sessions on &ldquo;Authentication Failures: How Common Mistakes Lead to Account Compromise&rdquo; and &ldquo;Deep into Offensive Security.&rdquo;</li>
                 </ul>
               </div>
             </div>
@@ -240,7 +225,16 @@ export default function ResumePage() {
                 Responsible Vulnerability Disclosure
               </h4>
               <p className="text-xs sm:text-sm text-muted-foreground">
-                Recognized by <strong className="text-foreground">TU Delft (Netherlands)</strong>, <strong className="text-foreground">SiteConnect</strong>, <strong className="text-foreground">PodBanter</strong>, and <strong className="text-foreground">Tolvyn</strong> for responsible vulnerability disclosure.
+                <strong className="text-foreground">4 Security Hall of Fame recognitions</strong>, including TU Delft (Netherlands), SiteConnect, PodBanter &amp; Tolvyn.
+                {" "}
+                <a
+                  href="https://www.linkedin.com/in/shrutishinde19/details/honors/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary font-mono hover:underline inline-flex items-center gap-1 ml-1"
+                >
+                  [View Recognitions] <ExternalLink className="w-3 h-3" />
+                </a>
               </p>
               <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-primary pt-1">
                 <a
@@ -249,7 +243,7 @@ export default function ResumePage() {
                   rel="noopener noreferrer"
                   className="hover:underline flex items-center gap-1"
                 >
-                  TU Delft: https://www.tudelft.nl/Hall-of-fame <ExternalLink className="w-3 h-3" />
+                  TU Delft <ExternalLink className="w-3 h-3" />
                 </a>
                 <span>|</span>
                 <a
@@ -258,7 +252,7 @@ export default function ResumePage() {
                   rel="noopener noreferrer"
                   className="hover:underline flex items-center gap-1"
                 >
-                  SiteConnect: https://siteconnect.io/security-hall-of-fame/ <ExternalLink className="w-3 h-3" />
+                  SiteConnect <ExternalLink className="w-3 h-3" />
                 </a>
                 <span>|</span>
                 <a
@@ -267,7 +261,7 @@ export default function ResumePage() {
                   rel="noopener noreferrer"
                   className="hover:underline flex items-center gap-1"
                 >
-                  PodBanter: https://podbanter.com/security/hall-of-fame <ExternalLink className="w-3 h-3" />
+                  PodBanter <ExternalLink className="w-3 h-3" />
                 </a>
                 <span>|</span>
                 <a
@@ -276,7 +270,7 @@ export default function ResumePage() {
                   rel="noopener noreferrer"
                   className="hover:underline flex items-center gap-1"
                 >
-                  Tolvyn: https://tolvyn.io/pages/security <ExternalLink className="w-3 h-3" />
+                  Tolvyn <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
             </div>

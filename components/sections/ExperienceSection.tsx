@@ -7,44 +7,24 @@ import { Experience } from "@/types";
 // Reusable experience data list matching official PDF resume
 const experiences: Experience[] = [
   {
-    id: "exp-4",
-    role: "Guest Speaker",
-    company: "AxiomSecureCrafts (ASC)",
-    location: "Online",
-    period: "20 Sep 2026",
-    type: "Online",
-    description:
-      'Delivered a technical session on "Broken Access Control" vulnerabilities, exploitation vectors, and secure authorization controls.',
-    responsibilities: [
-      'Keynote session on "Broken Access Control" (OWASP Top 10 A01:2021)',
-      "Analysis of Privilege Escalation & Insecure Direct Object References (IDOR)",
-      "Best Practices for Implementing Robust Access Control & Authorization Policies",
-    ],
-    skills: [
-      "Broken Access Control",
-      "OWASP Top 10",
-      "Authorization Security",
-      "Public Speaking",
-    ],
-  },
-  {
     id: "exp-3",
     role: "Guest Speaker",
-    company: "OWASP Security Summit 2026 – Knight Secured",
+    company: "Knight Secured & AxiomSecureCrafts",
     location: "Online",
-    period: "Sep 4, 2026",
+    period: "Sep 4 & Sep 21, 2026",
     type: "Online",
     description:
-      'Spoke on "Authentication Failures: How Common Mistakes Lead to Account Compromise."',
+      'Delivered sessions on "Authentication Failures: How Common Mistakes Lead to Account Compromise" and "Deep into Offensive Security."',
     responsibilities: [
-      "Keynote Talk on Authentication Failures & Account Compromise",
-      "Analysis of Common Implementation Mistakes",
-      "Security Best Practices & Mitigation Strategies",
+      'Delivered "Authentication Failures: How Common Mistakes Lead to Account Compromise" session',
+      'Delivered "Deep into Offensive Security" technical session',
+      "Presented live exploitation analysis, attack vectors, and mitigation strategies",
     ],
     skills: [
       "Authentication Security",
+      "Offensive Security",
+      "Broken Access Control",
       "Public Speaking",
-      "OWASP Security Summit",
       "Account Compromise Mitigation",
     ],
   },

@@ -98,7 +98,7 @@ export default function AboutSection() {
             className="lg:col-span-7 space-y-6 text-muted-foreground text-base sm:text-lg leading-relaxed"
           >
             <h3 className="text-2xl font-bold text-foreground tracking-tight">
-              Hello, I&apos;m Shruti Shinde.
+              Hello, I&apos;m Shruti Vijay Shinde.
             </h3>
 
             <p>

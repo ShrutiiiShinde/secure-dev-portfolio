@@ -21,7 +21,7 @@ export default function HeroSection() {
               <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-2 border-primary/60 shadow-xl ring-4 ring-primary/20 transition-all duration-300 group-hover:scale-105 group-hover:ring-primary/40">
                 <Image
                   src="/shruti.jpg"
-                  alt="Shruti Shinde"
+                  alt="Shruti Vijay Shinde"
                   width={128}
                   height={128}
                   className="w-full h-full object-cover object-top"
@@ -42,7 +42,7 @@ export default function HeroSection() {
           {/* Title */}
           <HeroEntrance delay={0.15}>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-foreground leading-[1.15]">
-              Shruti Shinde&apos;s{" "}
+              Shruti Vijay Shinde&apos;s{" "}
               <span className="text-primary">
                 Portfolio
               </span>

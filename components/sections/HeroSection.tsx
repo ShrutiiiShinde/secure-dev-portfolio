@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, FileText, Mail, Shield } from "lucide-react";
 import HeroEntrance from "./HeroEntrance";
@@ -14,26 +13,10 @@ export default function HeroSection() {
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center relative z-10">
-        <div className="flex flex-col items-center space-y-6">
-          {/* Circular Photo Avatar */}
-          <HeroEntrance delay={0.05}>
-            <div className="relative group cursor-pointer">
-              <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-2 border-primary/60 shadow-xl ring-4 ring-primary/20 transition-all duration-300 group-hover:scale-105 group-hover:ring-primary/40">
-                <Image
-                  src="/shruti.jpg"
-                  alt="Shruti Vijay Shinde"
-                  width={128}
-                  height={128}
-                  className="w-full h-full object-cover object-top"
-                  priority
-                />
-              </div>
-            </div>
-          </HeroEntrance>
-
+        <div className="flex flex-col items-center space-y-8">
           {/* Subtle Security Badge */}
-          <HeroEntrance delay={0.10}>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-sm">
+          <HeroEntrance delay={0.05}>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-sm">
               <Shield className="w-4 h-4" />
               <span>Secure SDLC & Full-Stack Engineering</span>
             </div>
@@ -42,7 +25,7 @@ export default function HeroSection() {
           {/* Title */}
           <HeroEntrance delay={0.15}>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-foreground leading-[1.15]">
-              Shruti Vijay Shinde&apos;s{" "}
+              Shruti Shinde&apos;s{" "}
               <span className="text-primary">
                 Portfolio
               </span>

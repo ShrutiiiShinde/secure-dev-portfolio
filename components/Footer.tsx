@@ -99,7 +99,7 @@ export default function Footer() {
 
         {/* Copyright Divider & Line */}
         <div className="w-full max-w-xs border-t border-muted/40 pt-4 text-xs text-muted-foreground/70">
-          © {currentYear} Shruti Vijay Shinde. All rights reserved.
+          © {currentYear} Shruti Shinde. All rights reserved.
         </div>
       </div>
     </footer>

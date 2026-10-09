@@ -20,7 +20,7 @@ export default function HeroSection() {
             <div className="relative group cursor-pointer">
               <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-2 border-primary/60 shadow-xl ring-4 ring-primary/20 transition-all duration-300 group-hover:scale-105 group-hover:ring-primary/40">
                 <Image
-                  src="/shruti.png"
+                  src="/shruti.jpg"
                   alt="Shruti Shinde"
                   width={128}
                   height={128}

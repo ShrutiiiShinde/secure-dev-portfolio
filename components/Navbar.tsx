@@ -25,7 +25,7 @@ export default function Navbar() {
           href="/#home"
           className="text-lg sm:text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors flex items-center gap-1"
         >
-          <span>Shruti Shinde</span>
+          <span>Shruti Vijay Shinde</span>
           <span className="text-primary text-2xl leading-none">.</span>
         </Link>
 

@@ -13,12 +13,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://github.com/ShrutiiiShinde/secure-dev-portfolio"),
   title: {
-    default: "Shruti Shinde | Secure Developer Portfolio",
-    template: "%s | Shruti Shinde",
+    default: "Shruti Vijay Shinde | Secure Developer Portfolio",
+    template: "%s | Shruti Vijay Shinde",
   },
   description:
-    "Personal portfolio of Shruti Shinde — Cyber Security Researcher & Software Developer focused on VAPT, Secure SDLC, Next.js, and TypeScript.",
+    "Personal portfolio of Shruti Vijay Shinde — Cyber Security Researcher & Software Developer focused on VAPT, Secure SDLC, Next.js, and TypeScript.",
   keywords: [
+    "Shruti Vijay Shinde",
     "Shruti Shinde",
     "Cyber Security Researcher",
     "VAPT",
@@ -30,20 +31,20 @@ export const metadata: Metadata = {
     "DevSecOps",
     "OWASP Top 10",
   ],
-  authors: [{ name: "Shruti Shinde" }],
-  creator: "Shruti Shinde",
+  authors: [{ name: "Shruti Vijay Shinde" }],
+  creator: "Shruti Vijay Shinde",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://github.com/ShrutiiiShinde/secure-dev-portfolio",
-    title: "Shruti Shinde | Secure Developer Portfolio",
+    title: "Shruti Vijay Shinde | Secure Developer Portfolio",
     description:
       "Cyber Security Researcher & Software Developer focused on VAPT, Secure SDLC, Next.js, and TypeScript.",
-    siteName: "Shruti Shinde's Portfolio",
+    siteName: "Shruti Vijay Shinde's Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shruti Shinde | Secure Developer Portfolio",
+    title: "Shruti Vijay Shinde | Secure Developer Portfolio",
     description:
       "Cyber Security Researcher & Software Developer focused on VAPT, Secure SDLC, Next.js, and TypeScript.",
     creator: "@ShrutiShinde",

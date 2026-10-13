@@ -16,9 +16,9 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Resume | Shruti Vijay Shinde",
+  title: "Resume | Shruti Shinde",
   description:
-    "View and download the official resume of Shruti Vijay Shinde — Cybersecurity Researcher & B.Tech CSE Graduate.",
+    "View and download the official resume of Shruti Shinde — Cybersecurity Researcher & B.Tech CSE Graduate.",
 };
 
 export default function ResumePage() {
@@ -36,7 +36,7 @@ export default function ResumePage() {
 
           <div className="flex flex-wrap items-center gap-3">
             <Button asChild variant="outline" size="sm" className="hidden sm:inline-flex">
-              <a href="/resume.pdf" download="Shruti_Vijay_Shinde_Resume.pdf">
+              <a href="/resume.pdf" download="Shruti_Shinde_Resume.pdf">
                 <Download className="w-4 h-4 mr-2 text-primary" />
                 Download Official PDF
               </a>
@@ -54,7 +54,7 @@ export default function ResumePage() {
             Curriculum <span className="text-primary">Vitae</span>
           </h1>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl">
-            View and download the official resume PDF of Shruti Vijay Shinde, updated with the latest VAPT experience, security research disclosures, and achievements.
+            View and download the official resume PDF of Shruti Shinde, updated with the latest VAPT experience, security research disclosures, and achievements.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function ResumePage() {
                 </a>
               </Button>
               <Button asChild size="sm" variant="default">
-                <a href="/resume.pdf" download="Shruti_Vijay_Shinde_Resume.pdf">
+                <a href="/resume.pdf" download="Shruti_Shinde_Resume.pdf">
                   <Download className="w-4 h-4 mr-2" />
                   Download PDF
                 </a>
@@ -86,7 +86,7 @@ export default function ResumePage() {
             <iframe
               src="/resume.pdf"
               className="w-full h-[550px] sm:h-[750px] border-0"
-              title="Shruti Vijay Shinde Official Resume PDF"
+              title="Shruti Shinde Official Resume PDF"
             />
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function ResumePage() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-muted/60">
             <div className="space-y-3">
               <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight">
-                SHRUTI VIJAY SHINDE
+                SHRUTI SHINDE
               </h2>
               
               <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-mono text-muted-foreground pt-1">

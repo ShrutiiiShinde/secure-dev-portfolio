@@ -83,7 +83,7 @@ export default function WritingSection() {
                     <div>
                       <div className="flex items-center gap-2 mb-1">
                         <span className="text-[10px] font-mono font-bold text-secondary uppercase px-2 py-0.5 rounded-full bg-secondary/10 border border-secondary/20">
-                          Part {idx + 1}
+                          Article {idx + 1}
                         </span>
                         <span className="text-xs font-mono text-muted-foreground hidden sm:inline-block">
                           {article.category}

@@ -49,4 +49,16 @@ export const articlesData: Article[] = [
     mediumUrl:
       "https://medium.com/@shrutishinde1319/decoding-a-url-paths-parameters-and-the-art-of-finding-whats-hidden-087f3b420d4c",
   },
+  {
+    id: "art-5",
+    title: "Broken Access Control (OWASP Top 10): The #1 Web Security Risk",
+    summary:
+      "An in-depth analysis of Broken Access Control, the #1 web security vulnerability in the OWASP Top 10. Analyzing authentication vs. authorization, Insecure Direct Object References (IDOR), horizontal and vertical privilege escalation, and key remediation strategies.",
+    readTime: "6 min read",
+    date: "2026",
+    category: "OWASP & Web Security",
+    tags: ["Broken Access Control", "OWASP Top 10", "IDOR", "Web Security"],
+    mediumUrl:
+      "https://medium.com/@shrutishinde1319/broken-access-control-owasp-top-10-2025-the-1-web-security-risk-d843bd36ef5e",
+  },
 ];

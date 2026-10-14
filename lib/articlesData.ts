@@ -61,4 +61,16 @@ export const articlesData: Article[] = [
     mediumUrl:
       "https://medium.com/@shrutishinde1319/broken-access-control-owasp-top-10-2025-the-1-web-security-risk-d843bd36ef5e",
   },
+  {
+    id: "art-6",
+    title: "Broken Access Control OWASP Top 10 (2025): A Practical Checklist (Part 2)",
+    summary:
+      "A hands-on testing checklist and methodology for detecting Broken Access Control vulnerabilities during web penetration tests. Covering horizontal/vertical privilege escalation test cases, IDOR scenarios, parameter tampering, and defense-in-depth prevention.",
+    readTime: "7 min read",
+    date: "2026",
+    category: "OWASP & Web Security",
+    tags: ["Broken Access Control", "OWASP Top 10", "VAPT Checklist", "Privilege Escalation"],
+    mediumUrl:
+      "https://medium.com/@shrutishinde1319/broken-access-control-owasp-top-10-2025-a-practical-checklist-part-2-c22c078e0cae",
+  },
 ];
